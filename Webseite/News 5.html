@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+
+
+ 
+    
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: white;
+      text-align: center;
+    }
+
+    header {
+      background-color: black;
+      padding: 60px;
+     
+    }
+
+    header img {
+      width: 80px;
+      display: block;
+      margin: 0 auto 5px auto;
+      padding: 1px;
+    }
+
+    h1 {
+      color: #c8102e;
+      margin: 0;
+  margin-top: -10px; 
+    }
+     
+    
+
+    footer {
+      background: black;
+      padding: 15px;
+      margin-top: 50px;
+      font-size: 14px;
+    }
+
+     
+
+.nav-right {
+  position: absolute;
+  top: 220px; /* höherer Wert = weiter unten */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 15px;
+}
+
+.nav-right a {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+  padding: 8px 12px;
+  border: 1px solid #c8102e;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.nav-right a:hover {
+  background-color: #c8102e;
+  color: white;}
+
+.Puma{
+  position: absolute;
+  top: 55px;
+  right: 240px;
+  display: flex;
+  gap: 15px;
+  background-color: black;
+}
+.Puma img {
+  height: 35px;
+  background: rgb(0, 0, 0);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+ 
+
+  .sponsors {
+  position: absolute;
+  top: 40px;
+  right: 20px;
+  display: flex;
+  gap: 20px;
+  background-color: black;
+}
+
+.sponsors img {
+  height: 70px;
+  background: rgb(0, 0, 0);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+
+.socials {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.socials img {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.socials img:hover {
+  transform: scale(1.2);
+}
+
+.team {
+  padding: 40px 20px;
+}
+
+.team h2 {
+  font-size: 32px;
+  color: #c8102e;
+  margin-bottom: 30px;
+}
+
+.team h3 {
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+.player-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.player-card {
+  background: #1a1a1a;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.player-card:hover {
+  transform: scale(1.05);
+}
+
+.player-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.player-card p {
+  margin-top: 10px;
+}
+.history {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
+  text-align: left;
+}
+
+.history h2 {
+  text-align: center;
+  color: #c8102e;
+  margin-bottom: 50px;
+}
+
+.history-block {
+  margin-bottom: 60px;
+}
+
+.history-block h3 {
+  color: #c8102e;
+  margin-bottom: 15px;
+}
+
+.history-block img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.history-block p {
+  line-height: 1.6;
+  color: #ddd;
+}
+
+.news-page {
+  padding: 120px 20px 40px; 
+}
+
+.news-title {
+  font-size: 36px;
+  color: #c8102e;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.3;
+
+  margin-top: 5px;
+}
+.news-page {
+  max-width: 800px;   
+  margin: 100px auto; 
+  padding: 0 20px;   
+  text-align: left;  
+}
+
+.news-page p {
+  line-height: 1.7;   
+  color: #ddd;
+  font-size: 16px;
+}
+  .news-page img {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+  
+.milan-footer {
+  background: black;
+  padding: 40px 20px;
+  margin-top: 60px;
+}
+
+.footer-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 2px;
+}
+
+.footer-line img {
+  width: 60px;
+}
+  
+  </style>
+</head>
+
+<body>
+
+
+  
+
+
+
+
+
+
+
+
+ <header>
+
+  <img src="https://www.acmilan.com/images/logo.png" width="80" alt="AC Milan Logo">
+  
+
+ 
+
+  <div class="sponsors">
+    <a href="https://www.emirates.com/it/italian/" target="_blank">
+    <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/08dbab47-de56-4300-ae2f-eba5f9f319b8/Emirates.png" alt="Sponsor">
+    </a>
+     <a href="https://www.msccrociere.it/" target="_blank">
+    <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/9ce229bf-d3a4-46e3-844c-a5a98ceb5ab1/MSC.png" alt="Sponsor">
+    </a>
+  </div>
+
+ <div class="socials">
+   <a href="https://www.instagram.com/acmilan/" target="_blank">
+  <img src="https://www.fcbarcelona.com/resources/v3.5.4-8282/i/icons/instagram-sm.png"  alt="Instagram">
+  </a>
+  <a href="https://www.tiktok.com/@acmilan" target="_blank">
+  <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/caaadbf8-c751-4460-b976-94d049aee45e/tiktok%404x.png?w=undefined&h=30&dpr=1&auto=format"  alt="tik tok">
+  </a>
+     <a href="https://www.facebook.com/ACMilan/" target="_blank">
+  <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/d57b79b5-4273-43da-8ba5-f3368c1db085/fb%404x.png?w=undefined&h=30&dpr=1&auto=format"  alt="facebook">
+  </a>
+  <a href="https://www.youtube.com/acmilan" target="_blank">
+  <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/3af01e8b-4352-4652-b45d-baa3ac826bd0/youtube%404x%20%281%29.png?w=undefined&h=30&dpr=1&auto=format"  alt="YOUTube">
+  </a>
+   <a href="https://www.twitch.tv/acmilan" target="_blank">
+  <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/c29cb155-e68a-466b-95b3-c32289d24328/twitch%404x.png?w=undefined&h=30&dpr=1&auto=format"  alt="twitch">
+  </a>
+  <a href="https://x.com/acmilan" target="_blank">
+  <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/d4b6416c-a9f4-4ce6-8071-e24e230279c3/X%404x.png?w=undefined&h=30&dpr=1&auto=format"  alt="twitter">
+  </a>
+  <a href="https://www.whatsapp.com/channel/0029VaYHjUs1SWsu7QxQkN1G" target="_blank">
+  <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/d9c36047-8daa-4f4e-8c2d-f79ebe14335d/wa%404x.png?w=undefined&h=30&dpr=1&auto=format"  alt="whatsapp">
+  </a>
+  <a href="https://www.linkedin.com/company/ac-milan/" target="_blank">
+  <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/a425626c-6397-4cfe-b574-bd694d0d0a8c/linkedin%404x.png?w=undefined&h=30&dpr=1&auto=format"  alt="linkedin">
+  </a>
+   </div>
+
+   <div class="Puma">
+   <a href="https://eu.puma.com/ch/de/home" target="_blank">
+    <img src="https://www.valenciacf.com/svg/partners-header/puma.svg" alt="Sponsor">
+    </a>
+    </div>
+
+</header>
+
+<main class="news-page">
+  <h1 class="news-title">DIE PRIMAVERA FEIERN EIN COMEBACK UND BESIEGEN CAGLIARI</h1>
+  <h2 class="under-tittle">
+Domniței und Scotti sichern den Sieg für die Rossoneri: 2:1 im PUMA House of Football</h2>
+
+  <p>Milan Primavera sicherte sich einen dominanten Sieg im PUMA House of Football und besiegte Cagliari mit 2:1 dank Toren von Domniței und Scotti. Es war ein hart erkämpfter Sieg mit einer stärkeren Leistung, als das Ergebnis vermuten lässt. Rennas Mannschaft kontrollierte das Spiel und dominierte, obwohl sie aufgrund eines unglücklichen Vorfalls früh in Rückstand gerieten. Durch ihre Ruhe und ihr Pressing konnten die Rossoneri ausgleichen und in einer spektakulären Aufholjagd in Führung gehen. Es war eine hervorragende Teamleistung, die die Intensität und Entschlossenheit der Rossoneri zeigte und eine deutliche Verbesserung nach den aufeinanderfolgenden Unentschieden gegen Sassuolo und Atalanta darstellte.
+
+Domniței setzt seine beeindruckende Torform in der zweiten Saisonhälfte fort, und Scotti zeigte sich erneut als entscheidend. Spieltag 35 ermöglicht es den Rossoneri, auf 47 Punkte aufzusteigen, in die Tabellenmitte aufzusteigen, mehrere direkte Rivalen zu erreichen und den Abstand auf Playoff-Plätze zu verringern, die nun sechs Punkte entfernt sind. Mit noch drei ausbleibenden Spielen endet der April positiv, und der Mai wird die letzte Phase sein, um die bestmöglichen Ergebnisse zu erzielen. Am nächsten Wochenende, am Samstag um 13:00 Uhr CEST, spielt Primavera auswärts gegen Monza.
+  <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/b0249164-63d0-4c01-a168-93e69e358d96/MilanCagliariPrimavera_13.jpg?w=860&auto=format" alt="Primavera Bild">  
+    <h2 class="under-tittle"> Spielbericht  </h2>
+   
+ <p>Das Spiel begann rasant, denn in der zweiten Minute war Bouyer bereits im Einsatz, um Trupy zu stoppen, und nur zwei Minuten später streifte Domnițeis Freistoß die Außenseite des Pfostens. In der sechsten Minute ermöglichte ein kostspieliger Ballbesitzfehler Cagliari, in Führung zu gehen: Trepy blieb ungedeckt und fand Raterink, der durchkam, der klinisch traf. AC Milan versuchte sofort zu reagieren, als Colombo in der 14. Minute einen Schuss abgab und Borsani in der 19. Minute nachsetzte, doch keiner traf das Tor. Die Rossoneri drängten weiter. In der 22. Minute parierte Kehayov Scotti, und drei Minuten später ging Domnițeis Schuss knapp vorbei. Auf beiden Seiten gab es große Chancen, als Malfitano in der 36. Minute per Kopf die Latte traf, und eine Minute später wurde Domniței aus kurzer Distanz gestoppt. Der Ausgleich fiel in der 43. Minute, und Domniței war einfach spektakulär, als er einen Sololauf startete und mit einem präzisen, flachen Schuss in die Ecke des Tores abschloss. Kurz darauf kam Bouyer aus dem Tor und verhinderte Trepy.
+
+AC Milan hielt seinen Schwung bis zur zweiten Halbzeit, als Kehayov in der 51. Minute eine Parade zeigte, um Mancioppi zu stoppen. Vier Minuten später köpfte Domniței in einem überfüllten Strafraum erneut den Pfosten. Die Chancen blieben unaufhörlich, und Pandolfis Versuch bereitete zur 60. Minute keine wirklichen Probleme mehr. In der 62. Minute konnte Borsani aus kurzer Distanz nicht verwandeln. Trepy wirkte in der 67. Minute erneut gefährlich, doch Bouyer blieb wachsam. Dann fiel das Tor, das das Spiel entschied, in der 68. Minute: Scottis Flanke traf Grandus Hand im Strafraum, und der Schiedsrichter forderte einen Elfmeter. Scotti trat an und verwandelte mit Gelassenheit. Die Rossoneri setzten ihren Angriff fort: Plazzotta verfehlte in der 73. Minute, und Mancioppi kam zwei Minuten später knapp am Tor vorbei. Eine Reihe großartiger Paraden von Kehayov hielt den Spielstand unten, indem er Borsani zweimal (76., 78.) und erneut Mancioppi (81.) stoppte. In der Nachspielzeit gab es eine späte Gefahr, als Cardu aus der Distanz schoss, doch der Versuch wurde abgefälscht, und Bouyer reagierte gut und lenkte den Ball ab.</p>
+  <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/6cbe01ab-fc17-4ecb-a21d-fd9e7a174024/2026.04.26-Report-Milan-Cagliari-Primavera-Interna.jpg?w=1280&auto=format" alt="Primavera Bild"> 
+<h2>Spieldetails</h2>
+<p>AC MILAN 2-1 CAGLIARI</p>
+<p>AC MILAN (4-3-3): Bouyer; F. Colombo, Wladimirow, Cullotta, Perera; Mancioppi, Pandolfi, Plazzotta; Borsani, Domniței (82' Castiello), Scotti (88' Perina). Ersatzspieler: Catalano; M. Cissè, Del Forno, Mercogliano, Nolli; Babaj, L. Colombo; Petrone, Zaramella. Trainer: Renna.</p>
+<p>CAGLIARI (4-3-3): Kehayov; Raterink, Grandu, Borsani, Cardu; Trupy, Malfitano, M. Cissè; Trepy (80' Sanna), R. Cissè (88' Soro), Bouyer. Ersatzspieler: Pinna; Fenu, Mura, Piras, Soro; Sanna, Tolu; Ladu, Manca. Trainer: Canzi.</p>
+<p>Schiedsrichter: Schiedsrichter: Kovačević von Arco Riva.</p>
+<p>Tore: 6' Raterink (C), 43' Domniței (M), 68' Elfmeter. Scotti (männlich).</p>
+<p>Verwarnt: 17' M. Cissè (C), 45' Plazzotta (M), 57' Cardu (C), 63' Borsani (M), 65' Pandolfi (M), 70' Raterink (C), 73' Grandu (C), 80' Trupy (C).</p>
+
+
+</main>
+<footer class="milan-footer">
+  <div class="footer-line">
+    <span>#SEMPREMILAN</span>
+
+    <img src="https://www.acmilan.com/images/logo.png" alt="AC Milan Logo">
+
+    <span>#ALWAYSMILAN
+</span>
+  </div>
+</footer>
+  
+
+
+</body>
+</html>

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+
+
+ 
+    
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: white;
+      text-align: center;
+    }
+
+    header {
+      background-color: black;
+      padding: 60px;
+     
+    }
+
+    header img {
+      width: 80px;
+      display: block;
+      margin: 0 auto 5px auto;
+      padding: 1px;
+    }
+
+    h1 {
+      color: #c8102e;
+      margin: 0;
+  margin-top: -10px; 
+    }
+     
+    
+
+    footer {
+      background: black;
+      padding: 15px;
+      margin-top: 50px;
+      font-size: 14px;
+    }
+
+     
+
+.nav-right {
+  position: absolute;
+  top: 220px; /* höherer Wert = weiter unten */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 15px;
+}
+
+.nav-right a {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+  padding: 8px 12px;
+  border: 1px solid #c8102e;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.nav-right a:hover {
+  background-color: #c8102e;
+  color: white;}
+
+.Puma{
+  position: absolute;
+  top: 55px;
+  right: 240px;
+  display: flex;
+  gap: 15px;
+  background-color: black;
+}
+.Puma img {
+  height: 35px;
+  background: rgb(0, 0, 0);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+ 
+
+  .sponsors {
+  position: absolute;
+  top: 40px;
+  right: 20px;
+  display: flex;
+  gap: 20px;
+  background-color: black;
+}
+
+.sponsors img {
+  height: 70px;
+  background: rgb(0, 0, 0);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+
+.socials {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.socials img {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.socials img:hover {
+  transform: scale(1.2);
+}
+
+.team {
+  padding: 40px 20px;
+}
+
+.team h2 {
+  font-size: 32px;
+  color: #c8102e;
+  margin-bottom: 30px;
+}
+
+.team h3 {
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+.player-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.player-card {
+  background: #1a1a1a;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.player-card:hover {
+  transform: scale(1.05);
+}
+
+.player-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.player-card p {
+  margin-top: 10px;
+}
+.history {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
+  text-align: left;
+}
+
+.history h2 {
+  text-align: center;
+  color: #c8102e;
+  margin-bottom: 50px;
+}
+
+.history-block {
+  margin-bottom: 60px;
+}
+
+.history-block h3 {
+  color: #c8102e;
+  margin-bottom: 15px;
+}
+
+.history-block img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.history-block p {
+  line-height: 1.6;
+  color: #ddd;
+}
+
+.news-page {
+  padding: 120px 20px 40px; 
+}
+
+.news-title {
+  font-size: 36px;
+  color: #c8102e;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.3;
+
+  margin-top: 5px;
+}
+.news-page {
+  max-width: 800px;   
+  margin: 100px auto; 
+  padding: 0 20px;   
+  text-align: left;  
+}
+
+.news-page p {
+  line-height: 1.7;   
+  color: #ddd;
+  font-size: 16px;
+}
+  .news-page img {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+.milan-footer {
+  background: black;
+  padding: 40px 20px;
+  margin-top: 60px;
+}
+
+.footer-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 2px;
+}
+
+.footer-line img {
+  width: 60px;
+}
+  
+  
+  </style>
+</head>
+
+<body>
+
+
+  
+
+
+
+
+
+
+
+
+ <header>
+
+  <img src="https://www.acmilan.com/images/logo.png" width="80" alt="AC Milan Logo">
+  
+
+ 
+
+  <div class="sponsors">
+    <a href="https://www.emirates.com/it/italian/" target="_blank">
+    <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/08dbab47-de56-4300-ae2f-eba5f9f319b8/Emirates.png" alt="Sponsor">
+    </a>
+     <a href="https://www.msccrociere.it/" target="_blank">
+    <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/9ce229bf-d3a4-46e3-844c-a5a98ceb5ab1/MSC.png" alt="Sponsor">
+    </a>
+  </div>
+
+ <div class="socials">
+   <a href="https://www.instagram.com/acmilan/" target="_blank">
+  <img src="https://www.fcbarcelona.com/resources/v3.5.4-8282/i/icons/instagram-sm.png"  alt="Instagram">
+  </a>
+  <a href="https://www.tiktok.com/@acmilan" target="_blank">
+  <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/caaadbf8-c751-4460-b976-94d049aee45e/tiktok%404x.png?w=undefined&h=30&dpr=1&auto=format"  alt="tik tok">
+  </a>
+     <a href="https://www.facebook.com/ACMilan/" target="_blank">
+  <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/d57b79b5-4273-43da-8ba5-f3368c1db085/fb%404x.png?w=undefined&h=30&dpr=1&auto=format"  alt="facebook">
+  </a>
+  <a href="https://www.youtube.com/acmilan" target="_blank">
+  <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/3af01e8b-4352-4652-b45d-baa3ac826bd0/youtube%404x%20%281%29.png?w=undefined&h=30&dpr=1&auto=format"  alt="YOUTube">
+  </a>
+   <a href="https://www.twitch.tv/acmilan" target="_blank">
+  <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/c29cb155-e68a-466b-95b3-c32289d24328/twitch%404x.png?w=undefined&h=30&dpr=1&auto=format"  alt="twitch">
+  </a>
+  <a href="https://x.com/acmilan" target="_blank">
+  <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/d4b6416c-a9f4-4ce6-8071-e24e230279c3/X%404x.png?w=undefined&h=30&dpr=1&auto=format"  alt="twitter">
+  </a>
+  <a href="https://www.whatsapp.com/channel/0029VaYHjUs1SWsu7QxQkN1G" target="_blank">
+  <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/d9c36047-8daa-4f4e-8c2d-f79ebe14335d/wa%404x.png?w=undefined&h=30&dpr=1&auto=format"  alt="whatsapp">
+  </a>
+  <a href="https://www.linkedin.com/company/ac-milan/" target="_blank">
+  <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/a425626c-6397-4cfe-b574-bd694d0d0a8c/linkedin%404x.png?w=undefined&h=30&dpr=1&auto=format"  alt="linkedin">
+  </a>
+   </div>
+
+   <div class="Puma">
+   <a href="https://eu.puma.com/ch/de/home" target="_blank">
+    <img src="https://www.valenciacf.com/svg/partners-header/puma.svg" alt="Sponsor">
+    </a>
+    </div>
+
+</header>
+
+<main class="news-page">
+  <h1 class="news-title">FRAUEN-PRIMAVERA JAGT DEN SCUDETTO-TRAUM</h1>
+  <h2 class="under-tittle">
+Scudetto Final Four startet am Samstag: Trainer Zago bewertet die Lage
+</h2>
+<img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/9c439b33-adda-4265-8535-2c221400f54d/2026.05.05-Focus-PrimaveraF-WebHP.png?w=1280&auto=format" alt="Manschafts Bild"> 
+
+ <p> Zum vierten Mal in ihrer fünfjährigen Geschichte wird unsere Frauen-Primavera-Mannschaft um das Scudetto kämpfen. Die Rossonere kehren nach drei Teilnahmen zwischen 2022 und 2024 sowie einer einjährigen Abwesenheit 2025 ins Finale zurück – eine Saison, die stark von Verletzungen im Kader von Matteo Zago geprägt war. Die jüngste Erinnerung ist auch die süßeste: der 3:1-Sieg gegen Sassuolo am 11. Mai 2024, der den italienischen Titel sicherte. Ab diesem Zeitpunkt stiegen mehrere Spieler dieser Gruppe in die erste Mannschaft auf.
+
+"Regelmäßiges Training mit den erfahrenen Spielern ist ein echter Bonus", sagte Trainer Zago am Ende einer Saison, in der seine Mannschaft konstant zu den besten Teams gehörte. "Es bringt neue Energie, Spielmuster und Dynamiken, die der ganzen Gruppe zugutekommen und einen tugendhaften Kreislauf schaffen. Die Titelsaison war besonders, weil der Kader voller Talente war und mehrere Spieler der ersten Mannschaft hervorbrachte. Nehmen wir zum Beispiel Giorgia Arrigoni und Nadine Sorelli – beide zeigen, wie Hunger, Einstellung und die richtige Einstellung einen weit bringen können. Für unsere Spieler ist es eine echte Motivation, diese Teamkollegen zu sehen – die nicht viel älter sind als sie, besonders angesichts der engen Zusammenarbeit der beiden Mannschaften."</p>
+  <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/d083725b-c254-44cc-94a1-8e4adc099ab0/2026.05.05-Focus-PrimaveraF-interna.jpg?w=1280&auto=format" alt="Chaka TraoreSSS Bild">  
+    
+
+
+<p> Nach 22 Spieltagen an der Tabellenspitze steht Juventus nun zwischen dem AC Mailand und der Rückkehr zum Titelkampf, den sie vor zwei Jahren gewannen. Das Finale würde zudem am selben Datum wie 2024 stattfinden: dem 11. Mai. "Es war eine Saison voller Herausforderungen, aber auch eine voller Konstanz", sagte der Trainer. "In jeder Phase gab es ein hartes Match oder einen schwierigen Moment, den es zu überwinden galt. Wir haben gute Konstanz in unseren Ergebnissen gezeigt, besonders gegen die Teams, die sich nicht qualifiziert haben, auch wenn es nicht immer einfach war." Zago fuhr fort: "Es ist eine Liga, in der das Gesamtniveau in den letzten Jahren deutlich gestiegen ist, und das ist wichtig. Im Vergleich zur letzten Saison haben wir alle verletzten Spieler zurückgeholt und haben jetzt einen sehr tiefen Kader. Es ist sicherlich anspruchsvoll zu managen, aber jeder Spieler hat einen Beitrag in einer eng verbundenen Gruppe geleistet, in der sich jeder eingebunden fühlt."
+
+Am Vorabend eines wichtigen Spiels, das am Samstag auf dem YouTube-Kanal der Serie A Frauen übertragen wird, herrscht Zuversicht und Optimismus. "In unserem letzten Spiel gegen Parma waren die ersten 15 Minuten die besten unserer gesamten Saison, und wir lagen mit 3:0 vorne. Ich war wirklich beeindruckt", fügte Zago hinzu und bezog sich auf den 4:1-Sieg. Das bevorstehende Spiel in Sassuolo ist das zweite K.-o.-Turnier der Saison, nach der Erfahrung im Viareggio Frauenpokal . "Dort lief es nicht gut. Wir bereuen nicht viel, aber es lief nicht so, wie wir erwartet hatten. Es war eine Erfahrung, die uns eine wertvolle Lektion gegeben hat – wir haben sie gut analysiert und das in den Rest der Saison mitgenommen. Die Niederlage gab uns Einheit, Erfahrung und den Wunsch nach Erlösung." Der Fokus liegt jetzt auf der Zukunft, sowohl dem Final Four als auch darüber hinaus: "Das Niveau des Frauenfußballs steigt mit großer Geschwindigkeit, und die Spielerinnen starten immer jünger. Die Hoffnung ist, die Basis weiter auszubauen. Je öfter das passiert, desto mehr Interesse erzeugt man."</p>
+
+</main>
+  <footer class="milan-footer">
+  <div class="footer-line">
+    <span>#SEMPREMILAN</span>
+
+    <img src="https://www.acmilan.com/images/logo.png" alt="AC Milan Logo">
+
+    <span>#ALWAYSMILAN
+</span>
+  </div>
+</footer>
+
+
+</body>
+</html>

@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop</title>
+
+ 
+    
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: white;
+      text-align: center;
+    }
+
+    header {
+      background-color: black;
+      padding: 60px;
+     
+    }
+
+    header img {
+      width: 80px;
+      display: block;
+      margin: 0 auto 5px auto;
+      padding: 1px;
+    }
+
+    h1 {
+      color: #c8102e;
+      margin: 0;
+  margin-top: -10px; 
+    }
+     
+    
+
+    footer {
+      background: black;
+      padding: 15px;
+      margin-top: 50px;
+      font-size: 14px;
+    }
+
+     
+
+.nav-right {
+  position: absolute;
+  top: 220px; 
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 15px;
+}
+
+.nav-right a {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+  padding: 12px 12px;
+  border: 1px solid #c8102e;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.nav-right a:hover {
+  background-color: #c8102e;
+  color: white;}
+
+.Puma{
+  position: absolute;
+  top: 55px;
+  right: 240px;
+  display: flex;
+  gap: 15px;
+  background-color: black;
+}
+.Puma img {
+  height: 35px;
+  background: rgb(0, 0, 0);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+ 
+
+  .sponsors {
+  position: absolute;
+  top: 40px;
+  right: 20px;
+  display: flex;
+  gap: 20px;
+  background-color: black;
+}
+
+.sponsors img {
+  height: 70px;
+  background: rgb(0, 0, 0);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+
+.socials {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.socials img {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.socials img:hover {
+  transform: scale(1.2);
+}
+
+
+.shop-container {
+  padding: 40px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.product {
+  background: #1a1a1a;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.product:hover {
+  transform: scale(1.05);
+}
+
+.product img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.product h3 {
+  margin: 10px 0 5px;
+}
+
+.product p {
+  color: #c8102e;
+  font-weight: bold;
+}
+
+.product button {
+  margin-top: 10px;
+  padding: 10px;
+  width: 100%;
+  background: #c8102e;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.product button:hover {
+  background: white;
+  color: black;
+}
+.milan-footer {
+  background: black;
+  padding: 40px 20px;
+  margin-top: 60px;
+}
+
+.footer-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 2px;
+}
+
+.footer-line img {
+  width: 60px;
+}
+  
+  
+  </style>
+</head>
+
+<body>
+
+
+  
+
+
+
+
+
+
+
+
+ <header>
+
+ 
+
+  <img src="https://www.acmilan.com/images/logo.png" width="80" alt="AC Milan Logo">
+  <h1>Shop</h1>
+
+  <nav class="nav-right">
+    <a href="index.html">Home</a>
+      <a href="news.html">News</a>
+    <a href="player.html">Player</a>
+  </nav>
+
+  <div class="sponsors">
+    <a href="https://www.emirates.com/it/italian/" target="_blank">
+    <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/08dbab47-de56-4300-ae2f-eba5f9f319b8/Emirates.png" alt="Sponsor">
+    </a>
+     <a href="https://www.msccrociere.it/" target="_blank">
+    <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/9ce229bf-d3a4-46e3-844c-a5a98ceb5ab1/MSC.png" alt="Sponsor">
+    </a>
+  </div>
+
+ <div class="socials">
+   <a href="https://www.instagram.com/acmilan/" target="_blank">
+  <img src="https://www.fcbarcelona.com/resources/v3.5.4-8282/i/icons/instagram-sm.png"  alt="Instagram">
+  </a>
+  <a href="https://www.tiktok.com/@acmilan" target="_blank">
+  <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/caaadbf8-c751-4460-b976-94d049aee45e/tiktok%404x.png?w=undefined&h=30&dpr=1&auto=format"  alt="tik tok">
+  </a>
+     <a href="https://www.facebook.com/ACMilan/" target="_blank">
+  <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/d57b79b5-4273-43da-8ba5-f3368c1db085/fb%404x.png?w=undefined&h=30&dpr=1&auto=format"  alt="facebook">
+  </a>
+  <a href="https://www.youtube.com/acmilan" target="_blank">
+  <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/3af01e8b-4352-4652-b45d-baa3ac826bd0/youtube%404x%20%281%29.png?w=undefined&h=30&dpr=1&auto=format"  alt="YOUTube">
+  </a>
+   <a href="https://www.twitch.tv/acmilan" target="_blank">
+  <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/c29cb155-e68a-466b-95b3-c32289d24328/twitch%404x.png?w=undefined&h=30&dpr=1&auto=format"  alt="twitch">
+  </a>
+  <a href="https://x.com/acmilan" target="_blank">
+  <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/d4b6416c-a9f4-4ce6-8071-e24e230279c3/X%404x.png?w=undefined&h=30&dpr=1&auto=format"  alt="twitter">
+  </a>
+  <a href="https://www.whatsapp.com/channel/0029VaYHjUs1SWsu7QxQkN1G" target="_blank">
+  <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/d9c36047-8daa-4f4e-8c2d-f79ebe14335d/wa%404x.png?w=undefined&h=30&dpr=1&auto=format"  alt="whatsapp">
+  </a>
+  <a href="https://www.linkedin.com/company/ac-milan/" target="_blank">
+  <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/a425626c-6397-4cfe-b574-bd694d0d0a8c/linkedin%404x.png?w=undefined&h=30&dpr=1&auto=format"  alt="linkedin">
+  </a>
+   </div>
+   <div class="Puma">
+   <a href="https://eu.puma.com/ch/de/home" target="_blank">
+    <img src="https://www.valenciacf.com/svg/partners-header/puma.svg" alt="Sponsor">
+    </a>
+    </div>
+
+
+     <main class="shop-container">
+
+  <h2>Unsere Produkte</h2>
+
+  <div class="product-grid">
+
+    <div class="product">
+      <img src="https://store.acmilan.com/cdn/shop/files/779962-A81_01.jpg?v=1747823735&width=900" alt="Trikot">
+      <h3>MILAN HOME 2025/26 JERSEY</h3>
+      <p>CHF 100</p>
+      <button onclick="addToCart('MILAN HOME 2025/26 JERSEY Trikot', 120)">Kaufen</button>
+    </div>
+
+    <div class="product">
+      <img src="https://store.acmilan.com/cdn/shop/files/779971-B50_01.jpg?v=1751450131&width=900" alt="Trikot">
+      <h3>MILAN AWAY 2025/26 JERSEY</h3>
+      <p>CHF 70</p>
+      <button onclick="addToCart('MILAN AWAY 2025/26 JERSEY Trikot', 70)">Kaufen</button>
+    </div>
+
+    <div class="product">
+      <img src="https://store.acmilan.com/cdn/shop/files/779979-C22_01.jpg?v=1753364250&width=900" alt="Trikot">
+      <h3>MAGLIA MILAN GARA THIRD 2025/26</h3>
+      <p>CHF 70</p>
+      <button onclick="addToCart('MAGLIA MILAN GARA THIRD 2025/26 Trikot', 70)">Kaufen</button>
+    </div>
+
+    <div class="product">
+      <img src="https://store.acmilan.com/cdn/shop/files/787637-C62_01.jpg?v=1772001760&width=900" alt="Trikot">
+      <h3>SILBERTRIKOT PUMA X AC MILAN X SLAM JAM</h3>
+      <p>CHF 120</p>
+      <button onclick="addToCart('SILBERTRIKOT PUMA X AC MILAN X SLAM JAM', 120)">Kaufen</button>
+    </div>
+
+    <div class="product">
+      <img src="https://store.acmilan.com/cdn/shop/files/787637-C02_01_a63bec66-417e-4aca-b618-e24d9c718789.jpg?v=1771956898&width=900" alt="Trikot">
+      <h3>ROTES TRIKOT PUMA X AC MILAN X SLAM JAM</h3>
+      <p>CHF 120</p>
+      <button onclick="addToCart('ROTES TRIKOT PUMA X AC MILAN X SLAM JAM', 120)">Kaufen</button>
+    </div>
+
+    <div class="product">
+      <img src="https://store.acmilan.com/cdn/shop/files/779984-C29_01.jpg?v=1747823611&width=900" alt="Trikot">
+      <h3>MILAN  TORWART HEIM 2025/26 TRIKOT</h3>
+      <p>CHF 80</p>
+      <button onclick="addToCart('MILAN  TORWART HEIM 2025/26 TRIKOT', 80)">Kaufen</button>
+  </div>
+
+      
+    <div class="product">
+      <img src="https://store.acmilan.com/cdn/shop/files/787642-A94_01.jpg?v=1771947892&width=900" alt="Trikot">
+      <h3> KAPUZENJACKE PUMA X AC MILANX SLAM JAM</h3>
+      <p>CHF 170</p>
+      <button onclick="addToCart(' KAPUZENJACKE PUMA X AC MILANX SLAM JAM', 170)">Kaufen</button>
+  </div>
+
+      <div class="product">
+      <img src="https://store.acmilan.com/cdn/shop/files/787771-A94_01.jpg?v=1771947909&width=900" alt="Trikot">
+      <h3>PANTS PUMA X AC MILAN X SLAM JAM</h3>
+      <p>CHF 150</p>
+      <button onclick="addToCart('PANTS PUMA X AC MILAN X SLAM JAM', 150)">Kaufen</button>
+    </div>
+
+     <div class="product">
+      <img src="https://store.acmilan.com/cdn/shop/files/085291-A81_01.jpg?v=1771947842&width=900" alt="Trikot">
+      <h3>FUSSBALL PUMA X AC MILAN X SLAM JAM</h3>
+      <p>CHF 35</p>
+      <button onclick="addToCart('FUSSBALL PUMA X AC MILAN X SLAM JAM', 35)">Kaufen</button>
+    </div>
+
+ <div class="product">
+      <img src="https://store.acmilan.com/cdn/shop/files/779987-A82_01.jpg?v=1747823937&width=900" alt="Trikot">
+      <h3>MILAN HOME 2025/26 SHORTS</h3>
+      <p>CHF 45</p>
+      <button onclick="addToCart('MILAN HOME 2025/26 SHORTS', 45)">Kaufen</button>
+    </div>
+
+     <div class="product">
+      <img src="https://store.acmilan.com/cdn/shop/files/780676-B50_01.jpg?v=1751450244&width=900" alt="Trikot">
+      <h3>MILAN AWAY 2025/26 SHORTS</h3>
+      <p>CHF 36</p>
+      <button onclick="addToCart('MILAN AWAY 2025/26 SHORTS', 36)">Kaufen</button>
+  </div>
+
+      <div class="product">
+      <img src="https://store.acmilan.com/cdn/shop/files/779987-C22_01_d07bd91a-219a-4ced-86fc-b31ec511cd61.jpg?v=1758884063&width=900" alt="Trikot">
+      <h3>MILAN THIRD 2025/26 SHORTS</h3>
+      <p>CHF 35</p>
+      <button onclick="addToCart('MILAN THIRD 2025/26 SHORTS', 35)">Kaufen</button>
+    </div>
+
+     <div class="product">
+      <img src="https://store.acmilan.com/cdn/shop/files/OMEA305G25-A00_01.jpg?v=1773325573&width=900" alt="Trikot">
+      <h3>BORDEAUX VARSITY JACKET OFF-WHITE™ C/O AC MILAN</h3>
+      <p>CHF 3.102,00</p>
+      <button onclick="addToCart('BORDEAUX VARSITY JACKET OFF-WHITE™ C/O AC MILAN', 3102)">Kaufen</button>
+    </div>
+    
+   <div class="product">
+      <img src="https://store.acmilan.com/cdn/shop/files/29A00571T-A00_01.jpg?v=1774961308&width=900" alt="Trikot">
+      <h3>CROPPED T-SHIRT OFF-WHITE™ C/O AC MILAN</h3>
+      <p>CHF 158</p>
+      <button onclick="addToCart('CROPPED T-SHIRT OFF-WHITE™ C/O AC MILAN', 158)">Kaufen</button>
+    </div>
+
+    <div class="product">
+      <img src="https://store.acmilan.com/cdn/shop/files/OMBB12NG25-A00_01.jpg?v=1774961295&width=900" alt="hoodie">
+      <h3>HOODIE OFF-WHITE™ C/O AC MILAN</h3>
+      <p>CHF 419</p>
+      <button onclick="addToCart('HOODIE OFF-WHITE™ C/O AC MILAN', 419)">Kaufen</button>
+    </div>
+
+    <div class="product">
+      <img src="https://store.acmilan.com/cdn/shop/files/784727-C52_01.jpg?v=1766485721&width=900" alt="hoodie">
+      <h3>AC MILAN RED JACKET KING COLLECTION
+</h3>
+      <p>CHF 90</p>
+      <button onclick="addToCart('AC MILAN RED JACKET KING COLLECTION', 90)">Kaufen</button>
+    </div>
+
+    <div class="product">
+      <img src="https://store.acmilan.com/cdn/shop/files/784727-C51_01.jpg?v=1766485696&width=900" alt="hoodie">
+      <h3>AC MILAN GREEN JACKET KING COLLECTION</h3>
+      <p>CHF 90</p>
+      <button onclick="addToCart('AC MILAN GREEN JACKET KING COLLECTION', 90)">Kaufen</button>
+    </div>
+
+    <div class="product">
+      <img src="https://store.acmilan.com/cdn/shop/files/GBTXCCHOOA-A01_01_5409a7dd-484b-407f-98bf-6533a5aab1d2.jpg?v=1765812976&width=900" alt="hoodie">
+      <h3>WHITE HOODIE - CELEBRATION CAPSULE</h3>
+      <p>CHF 67</p>
+      <button onclick="addToCart('WHITE HOODIE - CELEBRATION CAPSULE', 67)">Kaufen</button>
+    </div>
+
+    <div class="product">
+      <img src="https://store.acmilan.com/cdn/shop/files/60771889-A00_01.jpg?v=1769069834&width=900" alt="hoodie">
+      <h3>NEW ERA X AC MILAN BLACK AND RED BEANIE</h3>
+      <p>CHF 30</p>
+      <button onclick="addToCart('NEW ERA X AC MILAN BLACK AND RED BEANIE', 30)">Kaufen</button>
+    </div>
+
+    <div class="product">
+      <img src="https://store.acmilan.com/cdn/shop/files/GLVPROG-A00_01.jpg?v=1762512497&width=900" alt="hoodie">
+      <h3>PRO GLOVES – ROSSIGNOL X AC MILAN</h3>
+      <p>CHF 55</p>
+      <button onclick="addToCart('PRO GLOVES – ROSSIGNOL X AC MILAN', 55)">Kaufen</button>
+    </div>
+
+    <div class="product">
+      <img src="https://store.acmilan.com/cdn/shop/files/TCDUCKSTAD-A04_01.jpg?v=1759504215&width=900" alt="hoodie">
+      <h3>RUBBER DUCK AC MILAN FAN</h3>
+      <p>CHF 30</p>
+      <button onclick="addToCart('RUBBER DUCK AC MILAN FAN', 30)">Kaufen</button>
+    </div>
+
+    <div class="product">
+      <img src="https://store.acmilan.com/cdn/shop/files/782356-A82_01.jpg?v=1751817807&width=440" alt="hoodie">
+      <h3>MILAN TRAINING 2025/26 BLACK JERSEY</h3>
+      <p>CHF 40</p>
+      <button onclick="addToCart('MILAN TRAINING 2025/26 BLACK JERSEY', 40)">Kaufen</button>
+    </div>
+
+    <div class="product">
+      <img src="https://store.acmilan.com/cdn/shop/files/784727-C52_01.jpg?v=1766485721&width=440" alt="hoodie">
+      <h3>AC MILAN RED JACKET KING COLLECTION</h3>
+      <p>CHF 90</p>
+      <button onclick="addToCart('AC MILAN RED JACKET KING COLLECTION', 90)">Kaufen</button>
+    </div>
+
+    <div class="product">
+      <img src="https://store.acmilan.com/cdn/shop/files/784715-A81_01.jpg?v=1766485550&width=770" alt="hoodie">
+      <h3>MILAN PREMATCH 2025/26 KINDER-T-SHIRT IN ROT UND SCHWARZ</h3>
+      <p>CHF 60</p>
+      <button onclick="addToCart('MILAN PREMATCH 2025/26 KINDER-T-SHIRT IN ROT UND SCHWARZ', 60)">Kaufen</button>
+    </div>
+
+    <div class="product">
+      <img src="https://store.acmilan.com/cdn/shop/files/782356-C34_01.jpg?v=1756711252&width=770" alt="hoodie">
+      <h3>MILAN TRAINING 2025/26 GELBES TRIKOT</h3>
+      <p>CHF 35</p>
+      <button onclick="addToCart('MILAN TRAINING 2025/26 GELBES TRIKOT', 35)">Kaufen</button>
+    </div>
+
+       <div class="product">
+      <img src="https://store.acmilan.com/cdn/shop/files/782391-C37_01.jpg?v=1747824528&width=440" alt="hoodie">
+      <h3>MILAN VOR DEM SPIEL 2025/26 1/4 ZIP TOP</h3>
+      <p>CHF 64</p>
+      <button onclick="addToCart('MILAN VOR DEM SPIEL 2025/26 1/4 ZIP TOP', 64)">Kaufen</button>
+    </div>
+
+    <div class="product">
+      <img src="https://store.acmilan.com/cdn/shop/files/084642-B79_01.jpg?v=1770197350&width=440" alt="hoodie">
+      <h3>OFFIZIELLER PUMA MINI BALL SERIE A 2025/26</h3>
+      <p>CHF 16</p>
+      <button onclick="addToCart('OFFIZIELLE PUMA MINI BALL SERIE A 2025/26', 16)">Kaufen</button>
+    </div>
+
+
+
+
+
+
+
+  </div>
+
+</main>
+
+
+</header>
+<script>
+let cart = [];
+
+function addToCart(name, price) {
+  cart.push({ name, price });
+  alert(name + " wurde zum Warenkorb hinzugefügt!");
+}
+</script>
+<footer class="milan-footer">
+  <div class="footer-line">
+    <span>#SEMPREMILAN</span>
+
+    <img src="https://www.acmilan.com/images/logo.png" alt="AC Milan Logo">
+
+    <span>#ALWAYSMILAN
+</span>
+  </div>
+</footer>
+
+</body>
+</html>

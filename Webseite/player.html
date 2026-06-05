@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Player</title>
+
+ 
+    
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: white;
+      text-align: center;
+    }
+
+    header {
+      background-color: black;
+      padding: 60px;
+     
+    }
+
+    header img {
+      width: 80px;
+      display: block;
+      margin: 0 auto 5px auto;
+      padding: 1px;
+    }
+
+    h1 {
+      color: #c8102e;
+      margin: 0;
+  margin-top: -10px; 
+    }
+     
+    
+
+    footer {
+      background: black;
+      padding: 15px;
+      margin-top: 50px;
+      font-size: 14px;
+    }
+
+     
+
+.nav-right {
+  position: absolute;
+  top: 220px; /* höherer Wert = weiter unten */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 15px;
+}
+
+.nav-right a {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+  padding: 8px 12px;
+  border: 1px solid #c8102e;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.nav-right a:hover {
+  background-color: #c8102e;
+  color: white;}
+
+.Puma{
+  position: absolute;
+  top: 55px;
+  right: 240px;
+  display: flex;
+  gap: 15px;
+  background-color: black;
+}
+.Puma img {
+  height: 35px;
+  background: rgb(0, 0, 0);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+ 
+
+  .sponsors {
+  position: absolute;
+  top: 40px;
+  right: 20px;
+  display: flex;
+  gap: 20px;
+  background-color: black;
+}
+
+.sponsors img {
+  height: 70px;
+  background: rgb(0, 0, 0);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+
+.socials {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.socials img {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.socials img:hover {
+  transform: scale(1.2);
+}
+
+.team {
+  padding: 40px 20px;
+}
+
+.team h2 {
+  font-size: 32px;
+  color: #c8102e;
+  margin-bottom: 30px;
+}
+
+.team h3 {
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+.team h4 {
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+
+
+.player-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 160px);
+  gap: 20px;
+  justify-content: center;
+}
+
+.player-card {
+  position: relative;
+  width: 160px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.player-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+  border: 1px solid #333; 
+}
+
+/* Overlay unten */
+.player-info {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+  text-align: left;
+}
+
+
+.player-info .number {
+  font-size: 22px;
+  font-weight: bold;
+  color: #c8102e;
+  display: block;
+}
+
+
+.player-info .name {
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.player-info .firstname {
+  font-size: 12px;
+  opacity: 0.8;
+  display: block;
+}
+.player-card:hover {
+  border-color: #c8102e;
+}
+.milan-footer {
+  background: black;
+  padding: 40px 20px;
+  margin-top: 60px;
+}
+
+.footer-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 2px;
+}
+
+.footer-line img {
+  width: 60px;
+}
+  
+  
+  </style>
+</head>
+
+<body>
+
+
+  
+
+
+
+
+
+
+
+
+ <header>
+
+  <img src="https://www.acmilan.com/images/logo.png" width="80" alt="AC Milan Logo">
+  <h1>Player</h1>
+
+  <nav class="nav-right">
+    <a href="index.html">Home</a>
+      <a href="news.html">News</a>
+    <a href="shop.html">Shop</a>
+   
+  </nav>
+
+  <div class="sponsors">
+    <a href="https://www.emirates.com/it/italian/" target="_blank">
+    <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/08dbab47-de56-4300-ae2f-eba5f9f319b8/Emirates.png" alt="Sponsor">
+    </a>
+     <a href="https://www.msccrociere.it/" target="_blank">
+    <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/9ce229bf-d3a4-46e3-844c-a5a98ceb5ab1/MSC.png" alt="Sponsor">
+    </a>
+  </div>
+
+ <div class="socials">
+   <a href="https://www.instagram.com/acmilan/" target="_blank">
+  <img src="https://www.fcbarcelona.com/resources/v3.5.4-8282/i/icons/instagram-sm.png"  alt="Instagram">
+  </a>
+  <a href="https://www.tiktok.com/@acmilan" target="_blank">
+  <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/caaadbf8-c751-4460-b976-94d049aee45e/tiktok%404x.png?w=undefined&h=30&dpr=1&auto=format"  alt="tik tok">
+  </a>
+     <a href="https://www.facebook.com/ACMilan/" target="_blank">
+  <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/d57b79b5-4273-43da-8ba5-f3368c1db085/fb%404x.png?w=undefined&h=30&dpr=1&auto=format"  alt="facebook">
+  </a>
+  <a href="https://www.youtube.com/acmilan" target="_blank">
+  <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/3af01e8b-4352-4652-b45d-baa3ac826bd0/youtube%404x%20%281%29.png?w=undefined&h=30&dpr=1&auto=format"  alt="YOUTube">
+  </a>
+   <a href="https://www.twitch.tv/acmilan" target="_blank">
+  <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/c29cb155-e68a-466b-95b3-c32289d24328/twitch%404x.png?w=undefined&h=30&dpr=1&auto=format"  alt="twitch">
+  </a>
+  <a href="https://x.com/acmilan" target="_blank">
+  <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/d4b6416c-a9f4-4ce6-8071-e24e230279c3/X%404x.png?w=undefined&h=30&dpr=1&auto=format"  alt="twitter">
+  </a>
+  <a href="https://www.whatsapp.com/channel/0029VaYHjUs1SWsu7QxQkN1G" target="_blank">
+  <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/d9c36047-8daa-4f4e-8c2d-f79ebe14335d/wa%404x.png?w=undefined&h=30&dpr=1&auto=format"  alt="whatsapp">
+  </a>
+  <a href="https://www.linkedin.com/company/ac-milan/" target="_blank">
+  <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/a425626c-6397-4cfe-b574-bd694d0d0a8c/linkedin%404x.png?w=undefined&h=30&dpr=1&auto=format"  alt="linkedin">
+  </a>
+   </div>
+   <div class="Puma">
+   <a href="https://eu.puma.com/ch/de/home" target="_blank">
+    <img src="https://www.valenciacf.com/svg/partners-header/puma.svg" alt="Sponsor">
+    </a>
+    </div>
+
+</header>
+
+<section class="team">
+
+  <h2>Men’s First Team</h2>
+
+  <!-- GOALKEEPERS -->
+  <h3>Goalkeepers</h3>
+
+  <div class="player-grid">
+
+    <div class="player-card">
+      <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/d54073f5-ef9a-47d6-84f8-247e855ec6cf/Maignan-Large.png?w=220&h=undefined&dpr=1&auto=format" alt="Maignan">
+      <div class="player-info">
+        <span class="number">16</span>
+        <span class="firstname">Mike</span>
+        <span class="name">MAIGNAN</span>
+      </div>
+    </div>
+
+    <div class="player-card">
+      <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/db87636e-5b22-4964-9040-014359ad33bd/TerraccianoP-Large.png?w=220&h=undefined&dpr=1&auto=format" alt="Terracciano">
+      <div class="player-info">
+        <span class="number">1</span>
+        <span class="firstname">Pietro</span>
+        <span class="name">TERRACCIANO</span>
+      </div>
+    </div>
+
+    <div class="player-card">
+      <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/03af0508-182d-4b0c-b4a8-8fcd818506a1/Torriani-Large.png?w=220&h=undefined&dpr=1&auto=format" alt="Torriani">
+      <div class="player-info">
+        <span class="number">96</span>
+        <span class="firstname">Lorenzo</span>
+        <span class="name">TORRIANI</span>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- DEFENDERS -->
+  <h3>Defenders</h3>
+
+  <div class="player-grid">
+
+    <div class="player-card">
+      <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/7c09f05e-895b-4d29-92c0-416493e7dbb6/Athekame-Large.png?w=220&auto=format" alt="Athekame">
+      <div class="player-info">
+        <span class="number">24</span>
+        <span class="firstname">Zachary</span>
+        <span class="name">ATHEKAME</span>
+      </div>
+    </div>
+
+    <div class="player-card">
+      <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/9baae4fe-ba17-4c4f-9c10-513eccdda318/Bartesaghi-Large.png?w=220&auto=format" alt="Bartesaghi">
+      <div class="player-info">
+        <span class="number">33</span>
+        <span class="firstname">Davide</span>
+        <span class="name">BARTESAGHI</span>
+      </div>
+    </div>
+
+    <div class="player-card">
+      <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/e70f79ae-93fe-4a2c-8dfc-830cbe77469a/DeWinter-Large.png?w=220&h=undefined&dpr=1&auto=format" alt="De Winter">
+      <div class="player-info">
+        <span class="number">5</span>
+        <span class="firstname">Koni</span>
+        <span class="name">DE WINTER</span>
+      </div>
+    </div>
+
+    <div class="player-card">
+      <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/e85e7f23-3e03-47f2-84e9-0650455343a0/Estupinan-Large.png?w=220&auto=format" alt="Estupinan">
+      <div class="player-info">
+        <span class="number">2</span>
+        <span class="firstname">Pervis</span>
+        <span class="name">ESTUPINAN</span>
+      </div>
+    </div>
+
+    <div class="player-card">
+      <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/e5b611c3-4370-4fbb-ba64-1f41a6f71205/Gabbia-Large.png?w=220&auto=format" alt="Gabbia">
+      <div class="player-info">
+        <span class="number">46</span>
+        <span class="firstname">Matteo</span>
+        <span class="name">GABBIA</span>
+      </div>
+    </div>
+
+    <div class="player-card">
+      <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/e5c6ff31-fe06-4df7-9442-a0484721833c/Odogu-Large.png?w=220&auto=format" alt="Odogu">
+      <div class="player-info">
+        <span class="number">27</span>
+        <span class="firstname">David</span>
+        <span class="name">ODOGU</span>
+      </div>
+    </div>
+
+    <div class="player-card">
+      <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/a8e2cfc4-5c4a-4cc3-b79a-44342bee64c8/Pavlovic-Large.png?w=220&auto=format" alt="Pavlovic">
+      <div class="player-info">
+        <span class="number">31</span>
+        <span class="firstname">Strahinja</span>
+        <span class="name">PAVLOVIC</span>
+      </div>
+    </div>
+
+    <div class="player-card">
+      <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/0237a211-b9a4-4b72-9965-9ffaff6a504f/Tomori-Large.png?w=220&h=undefined&dpr=1&auto=format" alt="Tomori">
+      <div class="player-info">
+        <span class="number">23</span>
+        <span class="firstname">Fikayo</span>
+        <span class="name">TOMORI</span>
+      </div>
+    </div>
+      </div>
+
+     <!-- MIDFIELDERS -->
+  <h3>Midfielders</h3>
+
+  <div class="player-grid">
+
+    <div class="player-card">
+      <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/050f250d-6a68-4601-bc08-6f00c4150db1/Fofana-Large.png?w=220&h=undefined&dpr=1&auto=format" alt="Fofana">
+      <div class="player-info">
+        <span class="number">19</span>
+        <span class="firstname">Youssouf</span>
+        <span class="name">FOFANA</span>
+      </div>
+    </div>
+
+    <div class="player-card">
+      <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/d51278de-61b2-441e-b726-4141c364204b/Jashari-Large.png?w=220&h=undefined&dpr=1&auto=format" alt="Jashari">
+      <div class="player-info">
+        <span class="number">30</span>
+        <span class="firstname">Ardon</span>
+        <span class="name">JASHARI</span>
+      </div>
+    </div>
+
+    <div class="player-card">
+      <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/f22a30bf-ca48-4226-9bb3-107da2122563/LoftusCheek-Large.png?w=220&h=undefined&dpr=1&auto=format" alt="Loftus Cheek">
+      <div class="player-info">
+        <span class="number">8</span>
+        <span class="firstname">Ruben</span>
+        <span class="name">LOFTUS CHEEK</span>
+      </div>
+    </div>
+
+    <div class="player-card">
+      <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/9259571d-d70a-4d47-9b43-f37488260c41/Modric-Large.png?w=220&h=undefined&dpr=1&auto=format" alt="Modric">
+      <div class="player-info">
+        <span class="number">14</span>
+        <span class="firstname">Luka</span>
+        <span class="name">MODRIC</span>
+      </div>
+    </div>
+
+    <div class="player-card">
+      <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/a4389b61-e57a-47ee-b44d-56c2e6af52b2/Pulisic-Large.png?w=220&h=undefined&dpr=1&auto=format" alt="Pulisic">
+      <div class="player-info">
+        <span class="number">11</span>
+        <span class="firstname">Christian</span>
+        <span class="name">PULISIC</span>
+      </div>
+    </div>
+
+    <div class="player-card">
+      <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/81e84dff-e286-471a-ad56-c66225492160/Rabiot-Large.png?w=220&h=undefined&dpr=1&auto=format" alt="Rabiot">
+      <div class="player-info">
+        <span class="number">12</span>
+        <span class="firstname">Adrien</span>
+        <span class="name">RABIOT</span>
+      </div>
+    </div>
+
+    <div class="player-card">
+      <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/744f4e8e-15c2-4fdd-9d66-eb81011ff416/Ricci-Large.png?w=220&h=undefined&dpr=1&auto=format" alt="Ricci">
+      <div class="player-info">
+        <span class="number">4</span>
+        <span class="firstname">Samuele</span>
+        <span class="name">RICCI</span>
+      </div>
+    </div>
+
+    <div class="player-card">
+      <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/67f018c2-17c7-4d1d-b89b-a972add18117/Saelemaekers-Large.png?w=220&h=undefined&dpr=1&auto=format" alt="Saelemaekers">
+      <div class="player-info">
+        <span class="number">23</span>
+        <span class="firstname">Alexis</span>
+        <span class="name">SAELEMAEKERS</span>
+      </div>
+    </div>
+        </div>
+
+
+        <!-- MIDFIELDERS -->
+  <h3>Forwards</h3>
+
+  <div class="player-grid">
+
+    <div class="player-card">
+      <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/9d8a1fdb-4834-4bb9-9969-8e0c54e3cb27/Fullkrug-Large.png?w=220&h=undefined&dpr=1&auto=format" alt="Fullkrug">
+      <div class="player-info">
+        <span class="number">9</span>
+        <span class="firstname">Niclas</span>
+        <span class="name">FÜLLKRUG</span>
+      </div>
+    </div>
+
+    <div class="player-card">
+      <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/b7e95383-15d5-4b88-b4a8-20aa6af6a4b9/Gimenez-Large.png?w=220&h=undefined&dpr=1&auto=format" alt="Gimenez">
+      <div class="player-info">
+        <span class="number">7</span>
+        <span class="firstname">Santiago</span>
+        <span class="name">JIMENEZ</span>
+      </div>
+    </div>
+
+    <div class="player-card">
+      <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/897bd614-ddf4-48cb-8fbd-bebb6d762e87/Leao-Large.png?w=220&h=undefined&dpr=1&auto=format" alt="Leao">
+      <div class="player-info">
+        <span class="number">10</span>
+        <span class="firstname">Rafael</span>
+        <span class="name">LEAO</span>
+      </div>
+    </div>
+
+    <div class="player-card">
+      <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/fd376361-49ac-44aa-b70b-cc4b2ba663db/Nkunku-Large.png?w=220&h=undefined&dpr=1&auto=format" alt="Nkunku">
+      <div class="player-info">
+        <span class="number">18</span>
+        <span class="firstname">Christopher</span>
+        <span class="name">NKUNKU</span>
+      </div>
+    </div>
+</span>
+  </div>
+
+  <footer class="milan-footer">
+  <div class="footer-line">
+    <span>#SEMPREMILAN</span>
+
+    <img src="https://www.acmilan.com/images/logo.png" alt="AC Milan Logo">
+
+    <span>#ALWAYSMILAN</span>
+</footer>
+</body>
+</html>
+
+
+    
+
+   

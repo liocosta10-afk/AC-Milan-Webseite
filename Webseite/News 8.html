@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+
+
+ 
+    
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: white;
+      text-align: center;
+    }
+
+    header {
+      background-color: black;
+      padding: 60px;
+     
+    }
+
+    header img {
+      width: 80px;
+      display: block;
+      margin: 0 auto 5px auto;
+      padding: 1px;
+    }
+
+    h1 {
+      color: #c8102e;
+      margin: 0;
+  margin-top: -10px; 
+    }
+     
+    
+
+    footer {
+      background: black;
+      padding: 15px;
+      margin-top: 50px;
+      font-size: 14px;
+    }
+
+     
+
+.nav-right {
+  position: absolute;
+  top: 220px; /* höherer Wert = weiter unten */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 15px;
+}
+
+.nav-right a {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+  padding: 8px 12px;
+  border: 1px solid #c8102e;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.nav-right a:hover {
+  background-color: #c8102e;
+  color: white;}
+
+.Puma{
+  position: absolute;
+  top: 55px;
+  right: 240px;
+  display: flex;
+  gap: 15px;
+  background-color: black;
+}
+.Puma img {
+  height: 35px;
+  background: rgb(0, 0, 0);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+ 
+
+  .sponsors {
+  position: absolute;
+  top: 40px;
+  right: 20px;
+  display: flex;
+  gap: 20px;
+  background-color: black;
+}
+
+.sponsors img {
+  height: 70px;
+  background: rgb(0, 0, 0);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+
+.socials {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.socials img {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.socials img:hover {
+  transform: scale(1.2);
+}
+
+.team {
+  padding: 40px 20px;
+}
+
+.team h2 {
+  font-size: 32px;
+  color: #c8102e;
+  margin-bottom: 30px;
+}
+
+.team h3 {
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+.player-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.player-card {
+  background: #1a1a1a;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.player-card:hover {
+  transform: scale(1.05);
+}
+
+.player-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.player-card p {
+  margin-top: 10px;
+}
+.history {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
+  text-align: left;
+}
+
+.history h2 {
+  text-align: center;
+  color: #c8102e;
+  margin-bottom: 50px;
+}
+
+.history-block {
+  margin-bottom: 60px;
+}
+
+.history-block h3 {
+  color: #c8102e;
+  margin-bottom: 15px;
+}
+
+.history-block img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.history-block p {
+  line-height: 1.6;
+  color: #ddd;
+}
+
+.news-page {
+  padding: 120px 20px 40px; 
+}
+
+.news-title {
+  font-size: 36px;
+  color: #c8102e;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.3;
+
+  margin-top: 5px;
+}
+.news-page {
+  max-width: 800px;   
+  margin: 100px auto; 
+  padding: 0 20px;   
+  text-align: left;  
+}
+
+.news-page p {
+  line-height: 1.7;   
+  color: #ddd;
+  font-size: 16px;
+}
+  .news-page img {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+.milan-footer {
+  background: black;
+  padding: 40px 20px;
+  margin-top: 60px;
+}
+
+.footer-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 2px;
+}
+
+.footer-line img {
+  width: 60px;
+}
+  
+  
+  </style>
+</head>
+
+<body>
+
+
+  
+
+
+
+
+
+
+
+
+ <header>
+
+  <img src="https://www.acmilan.com/images/logo.png" width="80" alt="AC Milan Logo">
+  
+
+ 
+
+  <div class="sponsors">
+    <a href="https://www.emirates.com/it/italian/" target="_blank">
+    <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/08dbab47-de56-4300-ae2f-eba5f9f319b8/Emirates.png" alt="Sponsor">
+    </a>
+     <a href="https://www.msccrociere.it/" target="_blank">
+    <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/9ce229bf-d3a4-46e3-844c-a5a98ceb5ab1/MSC.png" alt="Sponsor">
+    </a>
+  </div>
+
+ <div class="socials">
+   <a href="https://www.instagram.com/acmilan/" target="_blank">
+  <img src="https://www.fcbarcelona.com/resources/v3.5.4-8282/i/icons/instagram-sm.png"  alt="Instagram">
+  </a>
+  <a href="https://www.tiktok.com/@acmilan" target="_blank">
+  <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/caaadbf8-c751-4460-b976-94d049aee45e/tiktok%404x.png?w=undefined&h=30&dpr=1&auto=format"  alt="tik tok">
+  </a>
+     <a href="https://www.facebook.com/ACMilan/" target="_blank">
+  <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/d57b79b5-4273-43da-8ba5-f3368c1db085/fb%404x.png?w=undefined&h=30&dpr=1&auto=format"  alt="facebook">
+  </a>
+  <a href="https://www.youtube.com/acmilan" target="_blank">
+  <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/3af01e8b-4352-4652-b45d-baa3ac826bd0/youtube%404x%20%281%29.png?w=undefined&h=30&dpr=1&auto=format"  alt="YOUTube">
+  </a>
+   <a href="https://www.twitch.tv/acmilan" target="_blank">
+  <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/c29cb155-e68a-466b-95b3-c32289d24328/twitch%404x.png?w=undefined&h=30&dpr=1&auto=format"  alt="twitch">
+  </a>
+  <a href="https://x.com/acmilan" target="_blank">
+  <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/d4b6416c-a9f4-4ce6-8071-e24e230279c3/X%404x.png?w=undefined&h=30&dpr=1&auto=format"  alt="twitter">
+  </a>
+  <a href="https://www.whatsapp.com/channel/0029VaYHjUs1SWsu7QxQkN1G" target="_blank">
+  <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/d9c36047-8daa-4f4e-8c2d-f79ebe14335d/wa%404x.png?w=undefined&h=30&dpr=1&auto=format"  alt="whatsapp">
+  </a>
+  <a href="https://www.linkedin.com/company/ac-milan/" target="_blank">
+  <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/a425626c-6397-4cfe-b574-bd694d0d0a8c/linkedin%404x.png?w=undefined&h=30&dpr=1&auto=format"  alt="linkedin">
+  </a>
+   </div>
+
+   <div class="Puma">
+   <a href="https://eu.puma.com/ch/de/home" target="_blank">
+    <img src="https://www.valenciacf.com/svg/partners-header/puma.svg" alt="Sponsor">
+    </a>
+    </div>
+
+</header>
+
+<main class="news-page">
+  <h1 class="news-title">MILAN FUTURO ENDET MIT EINEM SIEG: PLAY-OFFS ALS NÄCHSTES</h1>
+  <h2 class="under-tittle">
+Die Rossoneri besiegten Vogherese am letzten Tag der regulären Saison</h2>
+
+  <p>Es war ein guter Nachmittag für Milan Futuro im letzten Spiel der Gruppe B der Serie A. Die Rossoneri gewannen mit 10:1 gegen eine schwächelnde Vogherese, nachdem sie in den ersten 45 Minuten entschieden hatten. Sie beenden die Saison auf dem vierten Platz. Über das Geschehen im Chinetti gibt es kaum etwas zu sagen, nachdem Oddos Mannschaft bereits nach 13 Minuten mit Paglieis erstem Tor (ein gut gestalteter Abschluss) in Führung ging. Am Spieltag 34 gab es zudem die ersten Tore für einen Primavera-Stammspieler Nirash Perera und den jungen Luca Menon, geboren 2009 und Teil des U17-Kaders.
+
+Wir hatten auch ein Eigentor von Russo und erzielten das Tor von diesem Mann Traorè, dem zurückkehrenden Balentien und den beiden Veteranen Branca und Magrassi, letzterer erzielte einen Hattrick. Der Sieg wurde Mauro Tassotti gewidmet, dem die Spieler vor dem Spiel Tribut zollten, nachdem er in den letzten Tagen operiert worden war. Die reguläre Saison ist nun beendet, denn die Rossoneri belegten mit 16 Siegen und 8 Unentschieden den vierten Platz, womit sie die Play-offs erreichen. Es ist auch ein prestigeträchtiges Duell, denn die Rossoneri werden am Sonntag, den 10. Mai um 15:00 Uhr MESZ, nach Verona reisen, um gegen Chievo anzutreten, das wir in dieser Saison bereits zweimal besiegt haben.
+  <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/e31ee2f3-28ed-4a94-9c4d-c1e9e503bc2f/MF-Vogherese-19.jpg?w=860&auto=format" alt="Chaka TraoreSSS Bild">  
+    <h2 class="under-tittle"> Spielbericht  </h2>
+   <p> gesamte Action fand von Anfang an in einer Hälfte des Feldes statt. Nach verschiedenen Chancen in den ersten zehn Minuten eröffneten wir das Tor nach einer Ecke, die Pagliei mit einem Hackenschuss volley einschlug (13. Minute). Nur fünf Minuten später stand es 2:0, als Magrassi nach einer Flanke von Cappelletti verwandelte. Das dritte Tor für die Rossoneri fiel in der 23. Minute, als Russo eine weitere Flanke von Cappelletti ins eigene Netz abfälschte. Nach einigen vergebenen Chancen von Traorè erhöhten die Rossoneri in der 39. Minute auf das vierte Tor, als Branca von außerhalb des Strafraums einschoss. In der Nachspielzeit führte Pereras später Lauf dazu, dass er das fünfte Tor der Gastgeber (sein erstes Saisontor) erzielte – Cappelletti mit seiner dritten Vorlage.
+
+Die zweite Halbzeit begann, und in der 51. Minute bestrafte Magrassi Selvaggios Fehler und erhöhte auf 6:0. Vier Minuten später erzielte Menon sein erstes Tor für Milan Futuro, Magrassi mit Vorlage. Magrassi erzielte dann einen Hattrick mit einem guten Abschluss in engem Raum (59. Minute). In der 72. Minute erzielte Balentien mit einem brillanten Solo-Tor wieder Treffer. Die Gäste erzielten dann ein (wunderschönes) Tor durch Zito mit einem unhaltbaren Schuss von außerhalb des Strafraums (79. Minute). Spät in der Partie legte Traorè für die Gastgeber ein weiteres Tor nach einem Tor nach einem Treffer an die Latte in der 86. Minute.</p>
+
+  <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/1887c4b3-d4bc-4d78-82e4-569b0e6221f1/2026.05.03-Report-Vogherese-interna.jpg?w=1280&auto=format" alt="Manschafts Bild"> 
+
+<h2>Spieldetails</h2>
+<p>MAILAND FUTURO 10-1 VOGHERESE</p>
+<p>MILAN FUTURO (4-3-3): Torriani; Cappelletti, Pagliei, Wladimirow, Perera (46' Dalpiaz); Geroli, Sala (46' Viana Seedorf), Branca (62' Balentien); Menon (75' Colombo), Magrassi (62' Asanji), Traorè. Ersatzspieler: Longoni; Minotti; Sardo; Ossola. Trainer: Oddo.
+<p> WOGHERESE (4-3-1-2): Maglieri (46. Lauf Selvaggio); Fasano, Ricci, Russo, Sotelo (46' Bisogno); Mazzola, Scarfì (73' Montesano), Prinelli; Cammarota (56' Manelli); Di Rienzo (46' Folli), Zito. Ersatzspieler: Nicosia, Salomone, Lipodio, Oumarou. Trainer: Salut.</p>
+<p> Schiedsrichter: Palmisano aus Saronno.</p>
+<p> Tore: 13' Pagliei (MF); 18', 51' und 59' Magrassi (MF); 23' O.G. Russo (MF); 39' Branca (MF); 45'+1 Perera (MF); 55' Menon (MF); 72' Balentien (MF); 79' Zito (V); 86' Traorè (MF).</p>
+<p>Verwarnt: 43' Menon (MF), 68' Geroli (MF).</p>
+
+</main>
+  <footer class="milan-footer">
+  <div class="footer-line">
+    <span>#SEMPREMILAN</span>
+
+    <img src="https://www.acmilan.com/images/logo.png" alt="AC Milan Logo">
+
+    <span>#ALWAYSMILAN
+</span>
+  </div>
+</footer>
+
+
+</body>
+</html>

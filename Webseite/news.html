@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NEWS</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: white;
+      text-align: center;
+    }
+
+    header {
+      background-color: black;
+      padding: 60px;
+     
+    }
+
+    header img {
+      width: 80px;
+      display: block;
+      margin: 0 auto 5px auto;
+      padding: -5px;
+    }
+
+    h1 {
+      color: #c8102e;
+      margin: 0;
+  margin-top: -10px; 
+  font-size: 30px;  
+    }
+     
+    
+
+    footer {
+      background: black;
+      padding: 15px;
+      margin-top: 50px;
+      font-size: 14px;
+    }
+
+     
+
+.nav-right {
+  position: absolute;
+  top: 220px; 
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 15px;
+}
+
+.nav-right a {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+  padding: 8px 12px;
+  border: 1px solid #c8102e;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.nav-right a:hover {
+  background-color: #c8102e;
+  color: white;}
+
+.Puma{
+  position: absolute;
+  top: 55px;
+  right: 240px;
+  display: flex;
+  gap: 15px;
+  background-color: black;
+}
+.Puma img {
+  height: 35px;
+  background: rgb(0, 0, 0);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+ 
+
+  .sponsors {
+  position: absolute;
+  top: 40px;
+  right: 20px;
+  display: flex;
+  gap: 20px;
+  background-color: black;
+}
+
+.sponsors img {
+  height: 70px;
+  background: rgb(0, 0, 0);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+
+.socials {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.socials img {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.socials img:hover {
+  transform: scale(1.2);
+}
+.news-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 50px;
+  padding: 0 20px;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.news-card {
+  background-color: #1a1a1a;
+  width: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.3s;
+  cursor: pointer;
+   margin-bottom: 8px;
+    display: flex;
+  flex-direction: column;
+}
+
+.news-card:hover {
+  transform: scale(1.05);
+}
+
+.news-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.news-card h2 {
+  color: #c8102e;
+  padding: 10px;
+}
+
+.news-card p {
+  padding: 0 10px 10px;
+}
+
+.date {
+  font-size: 12px;
+  color: gray;
+}
+.news-btn {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 8px 18px;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 25px; /* rund = moderner Look */
+  transition: 0.3s;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    margin-top: auto;
+}
+
+.news-btn:hover {
+  background-color: #c8102e; 
+  color: white;
+  transform: translateY(-3px); 
+  box-shadow: 0 10px 20px rgba(200,16,46,0.4);
+}
+.milan-footer {
+  background: black;
+  padding: 40px 20px;
+  margin-top: 60px;
+}
+
+.footer-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 2px;
+}
+
+.footer-line img {
+  width: 60px;
+}
+
+  
+  
+  </style>
+</head>
+<body>
+
+  
+
+
+
+
+
+
+ <header>
+ 
+
+  <img src="https://www.acmilan.com/images/logo.png" width="80" alt="AC Milan Logo">
+  <h1>News</h1>
+
+
+   <nav class="nav-right">
+<a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="player.html">Player</a>
+  </nav>
+  <div class="sponsors">
+    <a href="https://www.emirates.com/it/italian/" target="_blank">
+    <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/08dbab47-de56-4300-ae2f-eba5f9f319b8/Emirates.png" alt="Sponsor">
+    </a>
+     <a href="https://www.msccrociere.it/" target="_blank">
+    <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/9ce229bf-d3a4-46e3-844c-a5a98ceb5ab1/MSC.png" alt="Sponsor">
+    </a>
+  
+  </div>
+
+ <div class="socials">
+   <a href="https://www.instagram.com/acmilan/" target="_blank">
+  <img src="https://www.fcbarcelona.com/resources/v3.5.4-8282/i/icons/instagram-sm.png"  alt="Instagram">
+  </a>
+  <a href="https://www.tiktok.com/@acmilan" target="_blank">
+  <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/caaadbf8-c751-4460-b976-94d049aee45e/tiktok%404x.png?w=undefined&h=30&dpr=1&auto=format"  alt="tik tok">
+  </a>
+     <a href="https://www.facebook.com/ACMilan/" target="_blank">
+  <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/d57b79b5-4273-43da-8ba5-f3368c1db085/fb%404x.png?w=undefined&h=30&dpr=1&auto=format"  alt="facebook">
+  </a>
+  <a href="https://www.youtube.com/acmilan" target="_blank">
+  <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/3af01e8b-4352-4652-b45d-baa3ac826bd0/youtube%404x%20%281%29.png?w=undefined&h=30&dpr=1&auto=format"  alt="YOUTube">
+  </a>
+   <a href="https://www.twitch.tv/acmilan" target="_blank">
+  <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/c29cb155-e68a-466b-95b3-c32289d24328/twitch%404x.png?w=undefined&h=30&dpr=1&auto=format"  alt="twitch">
+  </a>
+  <a href="https://x.com/acmilan" target="_blank">
+  <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/d4b6416c-a9f4-4ce6-8071-e24e230279c3/X%404x.png?w=undefined&h=30&dpr=1&auto=format"  alt="twitter">
+  </a>
+  <a href="https://www.whatsapp.com/channel/0029VaYHjUs1SWsu7QxQkN1G" target="_blank">
+  <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/d9c36047-8daa-4f4e-8c2d-f79ebe14335d/wa%404x.png?w=undefined&h=30&dpr=1&auto=format"  alt="whatsapp">
+  </a>
+  <a href="https://www.linkedin.com/company/ac-milan/" target="_blank">
+  <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/a425626c-6397-4cfe-b574-bd694d0d0a8c/linkedin%404x.png?w=undefined&h=30&dpr=1&auto=format"  alt="linkedin">
+  </a>
+   </div>
+   <div class="Puma">
+   <a href="https://eu.puma.com/ch/de/home" target="_blank">
+    <img src="https://www.valenciacf.com/svg/partners-header/puma.svg" alt="Sponsor">
+    </a>
+    </div>
+
+
+</header>
+ <main class="news-container">
+
+     <div class="news-card">
+    <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/bf90e18b-c905-4e6d-8d53-1cd3e5f92473/2026.05.13-AntPost-GenoaMilan-WebHP.png?w=1280&auto=format" alt="News Bild">
+    <h2>SERIE A 2025/26: DATUM UND ZEIT FÜR SPIELTAG 37</h2>
+    <p class="date">11. Mai 2026</p>
+    <p>Die Saison 2025/26 der Serie A geht in die Schlussphase, und am Spieltag 37 bestreitet die Mannschaft von Massimiliano Allegri ihr letztes Auswärtsspiel der Saison. Hier sind die Details:  </p>
+  <a href="News 15.html" target="_blank" class="news-btn">Mehr erfahren</a> 
+  </div>
+
+
+     <div class="news-card">
+    <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/a29dd0db-0a40-4ad6-8995-224666e809d8/2026.05.10-Report-ChievoMF-WebHP.png?w=1280&auto=format" alt="News Bild">
+    <h2>MILAN FUTUROS FELDZUG ENDET, CHIEVO IM FINALE </h2>
+    <p class="date">10. Mai 2026</p>
+    <p>Ein hart umkämpftes Spiel, das die Saison für Milan Futuro von Trainer Oddo abschließt. Es endete 2:1 gegen Chievo in Verona, nach wirklich intensiven 120 Minuten.   </p>
+  <a href="News 14.html" target="_blank" class="news-btn">Mehr erfahren</a> 
+  </div>
+
+    
+     <div class="news-card">
+    <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/44b4f5b3-954f-4b52-ba20-254f8652cbc1/2026.05.10-Report-Milan-Atalanta-WebHP.png?w=1280&auto=format" alt="News Bild">
+    <h2>AC MILAN WIRD VON ATALANTA BESIEGT </h2>
+    <p class="date">10. Mai 2026</p>
+    <p>Am Muttertag wurde AC Mailand im San Siro mit 2:3 von Atalanta von Raffaele Palladino zuhause in San Siro besiegt  </p>
+  <a href="News 13.html" target="_blank" class="news-btn">Mehr erfahren</a> 
+  </div>
+
+   <div class="news-card">
+    <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/f4b791da-b03a-4619-b7a7-946e8a91ab40/2026.05.03-Report-Sassuolo-Milan-Orizzontale.jpg?w=565&auto=format" alt="News Bild">
+    <h2>ROSSONERI VERLIEREN  GEGEN SASSUOLO</h2>
+    <p class="date">03. Mai 2026</p>
+    <p>Ein schwieriger Nachmittag für AC Mailand, der auswärts mit 2:0 bei Sassuolo verlor. In Reggio Emilia fielen die entscheidenden Tore von Berardi in der 5. Minute und Laurienté in der 47.  </p>
+  <a href="News 7.html" target="_blank" class="news-btn">Mehr erfahren</a> 
+  </div>
+
+   <div class="news-card">
+    <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/81b014ab-c8fd-43c9-ac72-2100e2d0bb50/2026.05.03-Report-Vogherese-orizzontale.jpg?w=565&auto=format" alt="News Bild">
+    <h2>MILAN FUTURO ENDET MIT EINEM SIEG: PLAY-OFFS ALS NÄCHSTES</h2>
+    <p class="date">03. Mai 2026</p>
+    <p>Es war ein guter Nachmittag für Milan Futuro im letzten Spiel der Gruppe B der Serie A. Die Rossoneri gewannen mit 10:1 gegen eine schwächelnde Vogherese  </p>
+<a href="News 8.html" target="_blank" class="news-btn">Mehr erfahren</a>  
+</div>
+
+  <div class="news-card">
+    <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/9c439b33-adda-4265-8535-2c221400f54d/2026.05.05-Focus-PrimaveraF-WebHP.png?w=1280&auto=format" alt="News Bild">
+    <h2>FRAUEN-PRIMAVERA JAGT DEN SCUDETTO-TRAUM</h2>
+    <p class="date">03. Mai 2026</p>
+    <p>Zum vierten Mal in ihrer fünfjährigen Geschichte wird unsere Frauen-Primavera-Mannschaft um das Scudetto kämpfen.  </p>
+    <a href="News 9.html" target="_blank" class="news-btn">Mehr erfahren</a>
+  </div>
+
+
+
+    <div class="news-card">
+    <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/f37296dd-7ea2-4c5e-9c4f-5dcee4dba91d/2026.04.26-Report-Juve-WebHP.png?w=1280&auto=format" alt="News Bild">
+    <h2>SPIEL MILAN GEGEN JUVENTUS ENDET 0:0</h2>
+    <p class="date">26. April 2026</p>
+    <p>Wie auch im Rückspiel endete es 0:0 zwischen AC Mailand und Juventus. Und ähnlich wie im Oktober bedauerten die Rossoneri ihre vergebenen Chancen in einem der größten Begegnungen des italienischen Fußballs.  </p>
+    <a href="News 4.html" target="_blank" class="news-btn">Mehr erfahren</a>
+  </div>
+
+
+  <div class="news-card">
+    <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/a7151cab-2857-4e3e-9c71-3fd24fcf1f2d/2026.04.26-Report-Milan-Cagliari-Primavera-WebHP.png?w=1280&auto=format" alt="News Bild">
+    <h2>DIE PRIMAVERA FEIERN EIN COMEBACK UND BESIEGEN CAGLIARI</h2>
+    <p class="date">26. April 2026</p>
+    <p>Milan Primavera sicherte sich einen dominanten Sieg im PUMA House of Football und besiegte Cagliari mit 2:1 dank Toren von Domniței und Scotti. </p>
+    <a href="News 5.html" target="_blank" class="news-btn">Mehr erfahren</a>
+  </div>
+
+  <div class="news-card">
+    <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/dc226a96-1eeb-4a9c-8aa0-10c57fd99e67/2026.04.26-MVP-MilanJuventus-Orizzontale.jpg?w=565&auto=format" alt="News Bild">
+    <h2>LUKA MODRIĆ IST DER MVP AUS AC MILAN GEGEN JUVENTUS</h2>
+  
+    <p class="date">27. April 2026</p>
+    <p>An einem Abend in San Siro, an dem Saelemaekers' Schuss an die Latte die klarste Chance war, glänzte Luka Modrić erneut am hellsten.
+
+Es war eine beeindruckende Leistung des Kroaten, das Herz des Rossoneri-Mittelfelds</p>
+   <a href="News 6.html" target="_blank" class="news-btn">Mehr erfahren</a>
+  </div>
+
+
+  <div class="news-card">
+    <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/371d6a70-4bda-4fe8-b799-46563be610ef/2026.04.19-Report-Hellas-Verona-Milan-WebHP.png?w=1280&auto=format" alt="News Bild">
+    <h2>Milan GEWINNT 1:0 GEGEN HELLAS VERONA</h2>
+    <p class="date">19. April 2026</p>
+    <p>Der AC Mailand ist nach einem 1:0-Sieg gegen Hellas Verona wieder in die Erfolgsspur zurückgefunden. Nach den Niederlagen gegen Udinese und Neapel war es für die Rossoneri wichtig.</p>
+    <a href="News 1.html" target="_blank" class="news-btn">Mehr erfahren</a>
+  </div>
+
+  <div class="news-card">
+    <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/8410aa17-83d7-4821-8774-668121da2fb8/2026.04.20-MVP-Hellas-Verona-Milan-WebHP.png?w=1280&auto=format" alt="News Bild">
+    <h2> RABIOT IST DER MVP DES SPIELS HELLAS VERONA GEGEN AC MAILAND</h2>
+    <p class="date">20. April 2026</p>
+    <p>AC Mailand sicherte sich einen entscheidenden Sieg gegen Hellas Verona und gewann dank einer herausragenden Leistung von Adrien Rabiot mit 1:0. </p>
+    <a href="News 2.html" target="_blank" class="news-btn">Mehr erfahren</a>
+  </div>
+
+  <div class="news-card">
+    <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/5dd276d0-dda3-46fb-be8e-be35eb3b11eb/2026.04.21-Focus-U16-WebHP.png?w=1280&auto=format" alt="News Bild">
+    <h2>U16-Junioren auf dem Weg ins Finale</h2>
+    <p class="date">21. April 2026</p>
+    <p>Die U16-Mannschaft beendete die reguläre Saison mit einer starken Leistung und sicherte sich mit 54 Punkten den zweiten Platz in Gruppe B, nur einen Punkt hinter dem Tabellenführer.</p>
+    <a href="News 3.html" target="_blank" class="news-btn">Mehr erfahren</a>
+  </div>
+
+  <div class="news-card">
+    <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/14bad34f-31b5-4b77-b064-bc016fbdf7a4/2026.04.11-Report-Udinese-WebHP.png?w=1280&auto=format" alt="News Bild">
+    <h2>ROSSONERI ZU HAUSE BESIEGT</h2>
+    <p class="date">11. April 2026</p>
+    <p> Das Spiel des 32. Spieltags von AC Mailand endete mit einer Niederlage. In San Siro Udinese gewann mit 0:3.</p>
+    <a href="News 10.html" target="_blank" class="news-btn">Mehr erfahren</a>
+  </div>
+
+    <div class="news-card">
+    <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/9e41d863-dac2-4ecf-a57d-a3687676821c/2026.04.12-Report-Brusaporto-MF-Orizzontale.jpg?w=565&auto=format" alt="News Bild">
+    <h2>DOMINANTES MILAN FUTURO GEWINNT 4:0 IN BRUSAPORTO</h2>
+    <p class="date">12. April 2026</p>
+    <p>  Ein überzeugender Sieg für Milan Futuro, das auswärts eine dominante Leistung zeigte und Brusaporto mit 4:0 besiegte.</p>
+    <a href="News 11.html" target="_blank" class="news-btn">Mehr erfahren</a>
+  </div>
+
+
+
+    <div class="news-card">
+    <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/858ebc00-a55c-4164-9fbc-a57946fede8c/2026.04.18-HBD-Gimenez-WebHP.png?w=1280&auto=format" alt="News Bild">
+    <h2>ALLES GUTE ZUM GEBURTSTAG, SANTIAGO</h2>
+    <p class="date">12. April 2026</p>
+    <p>  Es ist Santiago Gimenez' 25. Geburtstag! Heute, am 18. April, feiert unser Stürmer seinen Geburtstag.</p>
+    <a href="News 12.html" target="_blank" class="news-btn">Mehr erfahren</a>
+  </div>
+
+
+  
+
+
+
+</main>
+<footer class="milan-footer">
+  <div class="footer-line">
+    <span>#SEMPREMILAN</span>
+
+    <img src="https://www.acmilan.com/images/logo.png" alt="AC Milan Logo">
+
+    <span>#ALWAYSMILAN
+</span>
+  </div>
+</footer>
+</body>
+</html>

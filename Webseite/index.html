@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AC Milan</title>
+
+ 
+    
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: white;
+      text-align: center;
+    }
+
+    header {
+      background-color: black;
+      padding: 60px;
+     
+    }
+
+    header img {
+      width: 80px;
+      display: block;
+      margin: 0 auto 5px auto;
+      padding: 1px;
+    }
+
+    h1 {
+      color: #c8102e;
+      margin: 0;
+  margin-top: -10px; 
+    }
+     
+    
+
+    footer {
+      background: black;
+      padding: 15px;
+      margin-top: 50px;
+      font-size: 14px;
+    }
+
+     
+
+.nav-right {
+  position: absolute;
+  top: 220px; 
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 15px;
+}
+
+.nav-right a {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+  padding: 8px 12px;
+  border: 1px solid #c8102e;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.nav-right a:hover {
+  background-color: #c8102e;
+  color: white;}
+
+.Puma{
+  position: absolute;
+  top: 55px;
+  right: 240px;
+  display: flex;
+  gap: 15px;
+  background-color: black;
+}
+.Puma img {
+  height: 35px;
+  background: rgb(0, 0, 0);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+ 
+
+  .sponsors {
+  position: absolute;
+  top: 40px;
+  right: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.sponsors img {
+  height: 70px;
+  padding: 5px;
+  border-radius: 50px;
+}
+
+
+.socials {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.socials img {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.socials img:hover {
+  transform: scale(1.2);
+}
+
+.team {
+  padding: 40px 20px;
+}
+
+.team h2 {
+  font-size: 32px;
+  color: #c8102e;
+  margin-bottom: 30px;
+}
+
+.team h3 {
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+.player-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.player-card {
+  background: #1a1a1a;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.player-card:hover {
+  transform: scale(1.05);
+}
+
+.player-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.player-card p {
+  margin-top: 10px;
+}
+.history {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
+  text-align: left;
+}
+
+.history h2 {
+  text-align: center;
+  color: #c8102e;
+  margin-bottom: 50px;
+}
+
+.history-block {
+  margin-bottom: 60px;
+}
+
+.history-block h3 {
+  color: #c8102e;
+  margin-bottom: 15px;
+}
+
+.history-block img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.history-block p {
+  line-height: 1.6;
+  color: #ddd;
+}
+.milan-footer {
+  background: black;
+  padding: 40px 20px;
+  margin-top: 60px;
+}
+
+.footer-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 2px;
+}
+
+.footer-line img {
+  width: 60px;
+}
+  
+  
+  </style>
+</head>
+
+<body>
+
+
+  
+
+
+
+
+
+
+
+
+ <header>
+
+  <img src="https://www.acmilan.com/images/logo.png" width="80" alt="AC Milan Logo">
+  <h1>AC Milan</h1>
+
+  <nav class="nav-right">
+      <a href="news.html">News</a>
+    <a href="shop.html">Shop</a>
+    <a href="player.html">Player</a>
+  </nav>
+
+  <div class="sponsors">
+    <a href="https://www.emirates.com/it/italian/" target="_blank">
+    <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/08dbab47-de56-4300-ae2f-eba5f9f319b8/Emirates.png" alt="Sponsor">
+    </a>
+     <a href="https://www.msccrociere.it/" target="_blank">
+    <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/9ce229bf-d3a4-46e3-844c-a5a98ceb5ab1/MSC.png" alt="Sponsor">
+    </a>
+  </div>
+
+ <div class="socials">
+   <a href="https://www.instagram.com/acmilan/" target="_blank">
+  <img src="https://www.fcbarcelona.com/resources/v3.5.4-8282/i/icons/instagram-sm.png"  alt="Instagram">
+  </a>
+  <a href="https://www.tiktok.com/@acmilan" target="_blank">
+  <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/caaadbf8-c751-4460-b976-94d049aee45e/tiktok%404x.png?w=undefined&h=30&dpr=1&auto=format"  alt="tik tok">
+  </a>
+     <a href="https://www.facebook.com/ACMilan/" target="_blank">
+  <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/d57b79b5-4273-43da-8ba5-f3368c1db085/fb%404x.png?w=undefined&h=30&dpr=1&auto=format"  alt="facebook">
+  </a>
+  <a href="https://www.youtube.com/acmilan" target="_blank">
+  <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/3af01e8b-4352-4652-b45d-baa3ac826bd0/youtube%404x%20%281%29.png?w=undefined&h=30&dpr=1&auto=format"  alt="YOUTube">
+  </a>
+   <a href="https://www.twitch.tv/acmilan" target="_blank">
+  <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/c29cb155-e68a-466b-95b3-c32289d24328/twitch%404x.png?w=undefined&h=30&dpr=1&auto=format"  alt="twitch">
+  </a>
+  <a href="https://x.com/acmilan" target="_blank">
+  <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/d4b6416c-a9f4-4ce6-8071-e24e230279c3/X%404x.png?w=undefined&h=30&dpr=1&auto=format"  alt="twitter">
+  </a>
+  <a href="https://www.whatsapp.com/channel/0029VaYHjUs1SWsu7QxQkN1G" target="_blank">
+  <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/d9c36047-8daa-4f4e-8c2d-f79ebe14335d/wa%404x.png?w=undefined&h=30&dpr=1&auto=format"  alt="whatsapp">
+  </a>
+  <a href="https://www.linkedin.com/company/ac-milan/" target="_blank">
+  <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/a425626c-6397-4cfe-b574-bd694d0d0a8c/linkedin%404x.png?w=undefined&h=30&dpr=1&auto=format"  alt="linkedin">
+  </a>
+   </div>
+
+   <div class="Puma">
+   <a href="https://eu.puma.com/ch/de/home" target="_blank">
+    <img src="https://www.valenciacf.com/svg/partners-header/puma.svg" alt="Sponsor">
+    </a>
+    </div>
+
+</header>
+
+<main>
+  <h2>Willkommen auf meiner AC Milan Webseite</h2>
+  <p>Forza Milan!</p>
+ <section class="history">
+  <h2>Die Geschichte von AC Milan</h2>
+  <h3> Von 1899 bis heute: Eine Geschichte voller Triumphe und Leidenschaft. Das ist der AC Milan.</h3>
+  <div class="history-block">
+  
+  
+    <p>
+      „Wir werden ein Team von Teufeln sein. Unsere Farben werden rot wie Feuer und schwarz sein, um unseren Gegnern Furcht einzuflößen!“ Mit diesen Worten gründete Herbert Kilpin am 16. Dezember 1899 den AC Mailand. Nur anderthalb Jahre später wurden die Rossoneri zum ersten Mal italienischer Meister, nachdem sie Genua am 5. Mai 1901 im Ponte Carrega mit 3:0 besiegt hatten.
+
+Die erste Feier fand 1899 im ersten Vereinsheim des AC Mailand, der Fiaschetteria Toscana in der Via Berchet in Mailand, statt. Worte, Orte und Daten, die den Grundstein für die glorreiche Geschichte der Rossoneri legten. Dieser Verein hat einen enormen Beitrag zum Weltfußball geleistet, so sehr, dass der AC Mailand von Dezember 2007 bis Februar 2014 die meisten von der FIFA anerkannten internationalen Titel hielt.
+
+Die Geschichte der Rossoneri ist heute legendär, ebenso wie die Männer, die sie mitgeschrieben haben – ob Präsidenten, Trainer oder Fußballer. Es gab so viele historische Persönlichkeiten, vom Engländer Alfred Edwards, unter dem der Verein seinen ersten Meistertitel gewann, und Andrea Rizzoli, dem ersten Präsidenten des AC Mailand und einer italienischen Mannschaft, die 1963 in Wembley den Europapokal gewann, bis hin zu Silvio Berlusconi, dem Präsidenten, der die größten Erfolge in Italien, Europa und auf der ganzen Welt hatte.
+
+  <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/592b8059-188a-42a1-9c26-46bd62f434eb/Storia-Cesare-Maldini.jpg?w=1280&auto=format" alt="Altes AC Milan Bild">   
+</p>
+  </div>
+
+  <div class="history-block">
+  
+  
+    <p>
+     Einen großartigen Verein erkennt man insbesondere an seiner Spielkultur, an dem von ihm gepflegten Stil, an seinem Auftreten und an der Innovationskraft seiner Führungsriege. Es ist kein Zufall, dass die zahlreichen Siege der Rossoneri über verschiedene Epochen und Jahrzehnte hinweg neue Visionen vom Fußballspiel hervorgebracht haben. Die Trainer des AC Mailand spielten dabei eine Schlüsselrolle: Die größten Trainer des italienischen Fußballs haben die Rossoneri trainiert. Gipo Viani, Nereo Rocco und Nils Liedholm ebneten den Weg für Arrigo Sacchi, Fabio Capello und Carlo Ancelotti. Letztere übernahmen ein beeindruckendes Erbe und strebten gleichzeitig danach, einen modernen, spektakulären Fußball zu etablieren.
+
+Während der historischen Jahre unter Berlusconis Präsidentschaft war Arrigo Sacchi äußerst erfolgreich und innovativ – nicht nur dank großartiger Spieler, sondern auch dank dessen, was man als zusätzlichen Faktor bezeichnen könnte: seinem Spielstil. Fabio Capello übernahm anschließend und sorgte für Kontinuität, indem er die Siegermentalität fortführte. Unter Sacchi gewann der AC Mailand einen Scudetto, zwei Europapokale, zwei europäische Supercups und zwei Weltpokale und gewann alle internationalen Endspiele, an denen er teilnahm. Und es war dieser zusätzliche Mann, das Spiel, das das Beste aus den Einzelnen herausholte und dazu führte, dass drei Rossoneri-Spieler 1988 (Van Basten, Gullit und Rijkaard) und 1989 (Van Basten, Baresi und Rijkaard) die ersten drei Plätze beim Ballon d’Or belegten.
+    </p>
+      <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/455008bb-01ec-4411-bdb6-ee56b69ff757/Storia-Van-Basten.jpg?w=1280&auto=format" alt="Van Basten AC Milan">
+  </div>
+
+  <div class="history-block">
+    
+    
+    <p>
+      Unter Capello dominierte der AC Mailand den italienischen Fußball und gewann in fünf Spielzeiten vier Scudetti. Doch der Erfolg beschränkte sich nicht nur auf die heimischen Meisterschaften; auch in Europa blieb die Mannschaft eine Macht. Die Rossoneri erreichten zwischen 1993 und 1995 drei Mal in Folge das Finale der Champions League. Der Triumph 1994 in Athen gegen Barcelona wurde von den AC-Mailand-Fans im Rahmen des Referendums zum 100-jährigen Vereinsjubiläum zum „Spiel des Jahrhunderts“ gewählt. Unter der Führung von Don Fabio waren die Rossoneri so stark, dass die Mannschaft zwischen Mai 1991 und März 1993 58 Spiele ungeschlagen blieb, während Sebastiano Rossi in der Saison 1993/94 929 Minuten ohne Gegentreffer blieb. Darüber hinaus gewann die Diavolo zwischen 1992 und 1994 drei italienische Meistertitel, ohne dabei einen einzigen Elfmeter zugesprochen zu bekommen.
+
+
+Nach Capellos Amtszeit und dem Scudetto-Titelgewinn von Alberto Zaccheroni in seiner ersten Saison beim Verein sowie Fatih Terims kurzem Intermezzo übernahm Carlo Ancelotti das Traineramt. Der Italiener wollte an die Erfolge der „Unsterblichen“ (unter Arrigo Sacchi), zu denen er selbst gehört hatte, und der „Unbesiegbaren“ von Fabio Capello anknüpfen. Mit König Carlo an der Spitze musste im Trophäenschrank der Rossoneri Platz geschaffen werden. In fünf Spielzeiten gewann Ancelotti zwei Champions-League-Titel und erreichte in drei weiteren Europapokal-Kampagnen das Finale, Halbfinale und Viertelfinale.
+    </p>
+    <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/a65bbefd-b50b-4efc-a252-ce6f9088994b/Storia-Ancelotti.jpg?w=1280&auto=format" alt="ancelotti AC Milan">
+  </div>
+
+  <div class="history-block">
+    
+  
+    <p>
+     In der Saison 2009/10 wurde Trainer Ancelotti durch Leonardo ersetzt. Dieser blieb ein Jahr lang Trainer des AC Mailand, nachdem er 13 Jahre für den Verein tätig gewesen war – zunächst als Spieler, dann als Funktionär der AC-Mailand-Stiftung Fondazione Milan und schließlich im technischen Bereich. Nach Leonardo übernahm Massimiliano Allegri, dem dank der Neuzugänge von Ibrahimovic, Robinho und Boateng im August 2010 sowie weiterer Verstärkungen im Januar 2011 eine fantastische Mannschaft für die Saison 2010/11 zur Verfügung stand. Unter Allegri gewann der AC Mailand den 18. Scudetto und die sechste Supercoppa Italiana, die im August 2011 im Pekinger Nationalstadion „Vogelnest“ gegen Inter Mailand errungen wurde. Nach weiteren zweieinhalb Spielzeiten, in denen der AC Mailand in der Serie A den zweiten und dritten Platz belegte, übernahm Clarence Seedorf das Traineramt – ebenfalls ein Mann, der zuvor bereits im Trikot der Rossoneri geglänzt hatte. Unter Seedorfs Führung holte der AC Mailand in der zweiten Hälfte der Saison 2013/14 insgesamt 35 Punkte.
+    </p>
+        <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/9cbeb86c-87b7-4e7a-9aaf-893a2d025251/Storia-Seedorf.jpg?w=1280&auto=format" alt="Seedorf AC Milan">
+  </div>
+
+  <div class="history-block">
+    
+  
+    <p>
+Nachdem Filippo Inzaghi in allen drei Finalspielen der Rossoneri im Jahr 2007 gegen Liverpool, Sevilla und die Boca Juniors getroffen hatte, übernahm er in der Saison 2014/15 das Traineramt der ersten Mannschaft. Zuvor hatte er die Primavera im Februar 2014 zum Sieg im Viareggio-Cup geführt. In der Saison 2015/16 begann Sinisa Mihajlovic die Saison als Cheftrainer und führte das Team ins Finale der Coppa Italia, bevor Cristian Brocchi aus der Primavera befördert wurde, um ihn zum Saisonende zu ersetzen.
+
+In der Saison 2016/17 wollte die Vereinsführung erneut einen Neuanfang wagen und verpflichtete Vincenzo Montella als neuen Trainer der Rossoneri. Dieser führte die Rossoneri am 23. Dezember 2016 zum Sieg in der Supercoppa Italiana gegen Juventus Turin, als Milan in Doha im Elfmeterschießen gewann. Rino Gattuso übernahm am 27. November 2017 das Traineramt – bereits eine Ikone der Rossoneri, nachdem er von 2002 bis 2011 mit dem AC Mailand zehn Titel gewonnen hatte (fünf in Italien und fünf international). Der ehemalige Mittelfeldspieler der Rossoneri führte den Verein ins Finale der Coppa Italia und sicherte ihm zudem zweimal die Qualifikation für die Europa League.    </p>
+        <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/1d7ea6de-d6f7-44fa-a579-44834004baf4/Storia-Gattuso.jpg?w=1280&auto=format" alt="Gattuso AC Milan">
+  </div>
+
+
+   <div class="history-block">
+    
+  
+    <p>
+Die Zusammenarbeit zwischen Gattuso und Casa Milan – dem neuen Hauptsitz der Rossoneri zu Beginn der Saison 2013/14 – endete im Mai 2019 im gegenseitigen Einvernehmen. Von diesem Zeitpunkt an fiel die Wahl des neuen Cheftrainers, unter der Leitung von Zvonimir Boban und Paolo Maldini, auf Marco Giampaolo. Sein erstes Spiel an der Seitenlinie der Rossoneri bestritt er im Sommer 2019 beim International Champions Cup, der Saison, in der der Verein sein 120-jähriges Jubiläum feierte. Die Ligasaison begann jedoch schleppend, und nach drei Niederlagen in Folge gegen Inter Mailand, Torino und Fiorentina sowie Schwierigkeiten bei der Umsetzung seiner neuen Spielphilosophie verließ Marco Giampaolo den Verein.
+
+Stefano Pioli übernahm sein Amt und leistete hervorragende Arbeit beim Wiederaufbau der Mannschaft und der Vergabe einer klaren Identität. Nach dem Lockdown aufgrund der Covid-19-Pandemie im Juni 2020 legten die Rossoneri eine beeindruckende Siegesserie hin und konnten fast jeden Gegner bezwingen. Die Saison 2020/21 markierte eine Wiedergeburt für den Verein, der in der Liga herausragende Leistungen zeigte. Der AC Mailand belegte mit 79 Punkten und 24 Siegen den zweiten Platz und qualifizierte sich erstmals seit sieben Jahren für die Champions League. Der Höhepunkt der Saison 2021/22 war der Gewinn der Serie A – die perfekte Belohnung für ein ambitioniertes Projekt. Erster Platz, 86 Punkte, 26 Siege und 69 erzielte Tore sind nur einige der Zahlen, die zum 19. Scudetto-Sieg des AC Mailand beitrugen. In der Saison 2022/23, in der die Titelverteidigung nicht gelang, machten die Rossoneri weiter Fortschritte und erreichten erstmals seit 16 Jahren das Halbfinale der Champions League.
+
+        <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/927531f4-2549-4908-a65b-61fd184232e9/Storia-Pioli.jpg?w=1280&auto=format" alt="Pioli AC Milan">
+  </div>
+
+
+  
+   <div class="history-block">
+    
+  
+    <p>
+Die Saison 2023/24 endete mit dem zweiten Platz in der Liga und der damit verbundenen Qualifikation für die Champions League und die Supercoppa Italiana. Der Europapokal-Einsatz begann in der Champions League, doch nach einem dritten Platz in der Gruppenphase hinter PSG und Borussia Dortmund ging es in der Europa League weiter, wo man im Viertelfinale gegen die Roma ausschied. Am Ende der Saison trennten sich der Verein und Stefano Pioli. Am 13. Juni 2024 wurde Paulo Fonseca als neuer Cheftrainer vorgestellt – der erste Portugiese auf dem Trainerstuhl der Rossoneri. Das Engagement des ehemaligen Lille-Trainers währte jedoch nur wenige Monate. Am 30. Dezember 2024 begann Sérgio Conceição sein Abenteuer beim AC Mailand.
+
+Die Ankunft unseres neuen portugiesischen Trainers fiel mit dem Gewinn der achten Supercoppa Italiana in der Vereinsgeschichte zusammen: In Riad drehten die Rossoneri einen Rückstand und besiegten Juventus Turin im Halbfinale und Inter Mailand im Finale mit 3:2. Trotz dieses großartigen Starts fanden die Rossoneri in der restlichen Saison 2024/25 keinen Rhythmus. Es war ein schwieriges Jahr, das mit einem achten Platz endete, wodurch wir die Qualifikation für den Europapokal verpassten und das Finale der Coppa Italia gegen Bologna verloren. Unsere Saison war beendet, und es war Zeit für einen Wechsel: Innerhalb weniger Tage verkündete der Verein die Verpflichtung von Igli Tare als Sportdirektor, und elf Jahre später ist Massimiliano Allegri zurück im Amt der Rossoneri.
+        
+  </div>
+
+</section>
+</main>
+
+<footer class="milan-footer">
+  <div class="footer-line">
+    <span>#SEMPREMILAN</span>
+
+    <img src="https://www.acmilan.com/images/logo.png" alt="AC Milan Logo">
+
+    <span>#ALWAYSMILAN
+</span>
+  </div>
+</footer>
+
+</body>
+</html>

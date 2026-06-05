@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+
+
+ 
+    
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #111;
+      color: white;
+      text-align: center;
+    }
+
+    header {
+      background-color: black;
+      padding: 60px;
+     
+    }
+
+    header img {
+      width: 80px;
+      display: block;
+      margin: 0 auto 5px auto;
+      padding: 1px;
+    }
+
+    h1 {
+      color: #c8102e;
+      margin: 0;
+  margin-top: -10px; 
+    }
+     
+    
+
+    footer {
+      background: black;
+      padding: 15px;
+      margin-top: 50px;
+      font-size: 14px;
+    }
+
+     
+
+.nav-right {
+  position: absolute;
+  top: 220px; 
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 15px;
+}
+
+.nav-right a {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+  padding: 8px 12px;
+  border: 1px solid #c8102e;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.nav-right a:hover {
+  background-color: #c8102e;
+  color: white;}
+
+.Puma{
+  position: absolute;
+  top: 55px;
+  right: 240px;
+  display: flex;
+  gap: 15px;
+  background-color: black;
+}
+.Puma img {
+  height: 35px;
+  background: rgb(0, 0, 0);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+ 
+
+  .sponsors {
+  position: absolute;
+  top: 40px;
+  right: 20px;
+  display: flex;
+  gap: 20px;
+  background-color: black;
+}
+
+.sponsors img {
+  height: 70px;
+  background: rgb(0, 0, 0);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+
+.socials {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.socials img {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.socials img:hover {
+  transform: scale(1.2);
+}
+
+.team {
+  padding: 40px 20px;
+}
+
+.team h2 {
+  font-size: 32px;
+  color: #c8102e;
+  margin-bottom: 30px;
+}
+
+.team h3 {
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+.player-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.player-card {
+  background: #1a1a1a;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.player-card:hover {
+  transform: scale(1.05);
+}
+
+.player-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.player-card p {
+  margin-top: 10px;
+}
+.history {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
+  text-align: left;
+}
+
+.history h2 {
+  text-align: center;
+  color: #c8102e;
+  margin-bottom: 50px;
+}
+
+.history-block {
+  margin-bottom: 60px;
+}
+
+.history-block h3 {
+  color: #c8102e;
+  margin-bottom: 15px;
+}
+
+.history-block img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.history-block p {
+  line-height: 1.6;
+  color: #ddd;
+}
+
+.news-page {
+  padding: 120px 20px 40px; 
+}
+
+.news-title {
+  font-size: 36px;
+  color: #c8102e;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.3;
+
+  margin-top: 5px;
+}
+.news-page {
+  max-width: 800px;   
+  margin: 100px auto; 
+  padding: 0 20px;   
+  text-align: left;  
+}
+
+.news-page p {
+  line-height: 1.7;   
+  color: #ddd;
+  font-size: 16px;
+}
+  .news-page img {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+.milan-footer {
+  background: black;
+  padding: 40px 20px;
+  margin-top: 60px;
+}
+
+.footer-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 2px;
+}
+
+.footer-line img {
+  width: 60px;
+}
+  
+  
+  </style>
+</head>
+
+<body>
+
+
+  
+
+
+
+
+
+
+
+
+ <header>
+
+  <img src="https://www.acmilan.com/images/logo.png" width="80" alt="AC Milan Logo">
+  
+
+ 
+
+  <div class="sponsors">
+    <a href="https://www.emirates.com/it/italian/" target="_blank">
+    <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/08dbab47-de56-4300-ae2f-eba5f9f319b8/Emirates.png" alt="Sponsor">
+    </a>
+     <a href="https://www.msccrociere.it/" target="_blank">
+    <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/9ce229bf-d3a4-46e3-844c-a5a98ceb5ab1/MSC.png" alt="Sponsor">
+    </a>
+  </div>
+
+ <div class="socials">
+   <a href="https://www.instagram.com/acmilan/" target="_blank">
+  <img src="https://www.fcbarcelona.com/resources/v3.5.4-8282/i/icons/instagram-sm.png"  alt="Instagram">
+  </a>
+  <a href="https://www.tiktok.com/@acmilan" target="_blank">
+  <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/caaadbf8-c751-4460-b976-94d049aee45e/tiktok%404x.png?w=undefined&h=30&dpr=1&auto=format"  alt="tik tok">
+  </a>
+     <a href="https://www.facebook.com/ACMilan/" target="_blank">
+  <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/d57b79b5-4273-43da-8ba5-f3368c1db085/fb%404x.png?w=undefined&h=30&dpr=1&auto=format"  alt="facebook">
+  </a>
+  <a href="https://www.youtube.com/acmilan" target="_blank">
+  <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/3af01e8b-4352-4652-b45d-baa3ac826bd0/youtube%404x%20%281%29.png?w=undefined&h=30&dpr=1&auto=format"  alt="YOUTube">
+  </a>
+   <a href="https://www.twitch.tv/acmilan" target="_blank">
+  <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/c29cb155-e68a-466b-95b3-c32289d24328/twitch%404x.png?w=undefined&h=30&dpr=1&auto=format"  alt="twitch">
+  </a>
+  <a href="https://x.com/acmilan" target="_blank">
+  <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/d4b6416c-a9f4-4ce6-8071-e24e230279c3/X%404x.png?w=undefined&h=30&dpr=1&auto=format"  alt="twitter">
+  </a>
+  <a href="https://www.whatsapp.com/channel/0029VaYHjUs1SWsu7QxQkN1G" target="_blank">
+  <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/d9c36047-8daa-4f4e-8c2d-f79ebe14335d/wa%404x.png?w=undefined&h=30&dpr=1&auto=format"  alt="whatsapp">
+  </a>
+  <a href="https://www.linkedin.com/company/ac-milan/" target="_blank">
+  <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/a425626c-6397-4cfe-b574-bd694d0d0a8c/linkedin%404x.png?w=undefined&h=30&dpr=1&auto=format"  alt="linkedin">
+  </a>
+   </div>
+
+   <div class="Puma">
+   <a href="https://eu.puma.com/ch/de/home" target="_blank">
+    <img src="https://www.valenciacf.com/svg/partners-header/puma.svg" alt="Sponsor">
+    </a>
+    </div>
+
+</header>
+
+<main class="news-page">
+  <h1 class="news-title">AC MILAN WIRD VON ATALANTA BESIEGT </h1>
+  <h2 class="under-tittle">
+Die Rossoneri erzielten zwei späte Tore durch Pavlović und Nkunku, nachdem sie 0:3 zurücklagen</h2>
+<p>Am Muttertag wurde AC Mailand im San Siro mit 2:3 von Atalanta von Raffaele Palladino besiegt. Nach der Niederlage gegen Sassuolo konnten Massimiliano Allegris Männer nicht reagieren, da sie zur Halbzeit nach Toren von Éderson und Zappacosta mit zwei Toren zurücklagen. Raspadori erzielte dann zu Beginn der zweiten Halbzeit das dritte Tor. Die Rossoneri reagierten spät durch einen Kopfball von Pavlović und einen Elfmeter von Nkunku, doch es war zu spät, in einem Spiel, in dem die Rossoneri nie wirklich in Schwung kamen.
+
+Der Einsatz von Christopher Nkunku veränderte die Angriffsstruktur des AC Mailand; Er traf die Latte, gewann und verwandelte anschließend den Elfmeter und erhöhte das Tempo spät in der Partie. Die Rossoneri kamen einem späten Punkt knapp nahe, doch dieser endete mit einer Niederlage, die AC Mailand auf 67 Punkten auf dem vierten Tabellenplatz zurücklässt. Als Nächstes reist AC Milan nach Marassi, um gegen Genua anzutreten, wo Allegri auf die gesperrten Estupiñan, Leão und Saelemaekers verzichten muss.</p>
+
+  <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/6c3d1ef3-51ea-450f-b31b-013d2770ff4d/MilanAtalanta_15.jpg?w=860&auto=format" alt="Saelemakers Bild">  
+    <h2 class="under-tittle"> Spielbericht  </h2>
+<p> Ein intensiver Start von Anfang an in San Siro. In der vierten Minute schoss Rabiot vom Strafraumeck und streifte die Latte, doch zuerst traf Atalanta: Ein Angriff mit De Ketelaere, mit einem feinen Ballvorspiel von Rapadori, der den Ball auf Éderson legte, und der Brasilianer aus spitzem Winkel fand die Ecke, 0:1 für Dea. Die Mannschaft aus Bergamo setzte den Druck fort, zuerst durch Kristović in der 15. Minute und Zalewski in der 17., beide von Maignan gehalten, dann erzielten sie in der 29. Minute das zweite Tor: weiteres Hold-up-Spiel, diesmal von Kristović, und ein Lauf in den Strafraum von Zappacosta, der aus kurzer Distanz zum 0:2 einschob. AC Milan versuchte durch Gimenez und Leão zu antworten, doch Carnesecchi konnte Saelemaekers' Versuch kurz vor der Halbzeit problemlos abwehren.
+
+Die zweite Halbzeit begann mit einem Distanzschuss von Leão, der über die Latte ging. In der 52. Minute schlug Atalanta erneut zu: Éderson eroberte den Ball zurück und bediente Raspadori, der mit dem linken Fuß den oberen Winkel traf und das 0:3 für die Nerazzurri stellte. AC Milan antwortete durch Nkunku, der mindestens zweimal gefährlich war und in der 75. Minute kurz vor dem Tor stand, als er die Latte traf, wobei auch Carnesecchis Abfälschung eine Rolle spielte. In der Schlussphase erhöhten die Rossoneri den Druck. Nach Riccis Freistoß verkürzte Pavlović mit einem kraftvollen Kopfball: 1:3. Tief in der Nachspielzeit erzwang Nkunku einen Elfmeter und verwandelte ihn zum 2:3, was scheinbar die Hoffnung auf ein Comeback neu entfachte. Wenige Minuten später kam Gabbia dem Ausgleich nahe, als sie Kunkus Freistoßflanke knapp am Tor vorbeilenkte. Das Spiel endete 2:3.</p>
+  <img src="https://assets-eu-01.kc-usercontent.com/1293c890-579f-01b7-8480-902cca7de55e/eca7e0af-73b2-496c-9cec-616468a3f882/2026.05.10-Report-Milan-Atalanta-Interna.jpg?w=1280&auto=format" alt="Jashari Bild"> 
+
+<h2>Spieldetails</h2>
+<p>AC MILAN 2-3 ATALANTA</p>
+<p>AC MILAN (3-5-2): Maignan; De Winter (58' Athekame), Gabbia, Pavlović; Saelemaekers, Loftus-Cheek (46' Nkunku), Ricci, Rabiot, Bartesaghi (80' Estupiñan); Leão (58' Fofana), Gimenez (58' Füllkrug). Ersatzspieler: Pittarella, Terracciano; Odogu;, Jashari. Trainer: Allegri.</p>
+<p>ATALANTA (3-4-2-1): Carnesecchi; Scalvini (48' Kossounou) (63' Ahanor), Hien, Kolašinac; Zappacosta (55' Bellanova), De Roon, Éderson, Zalewski; De Ketelaere (63' Pašalić), Raspadori; Krstović. A disp.: Rossi, Sportiello; Obrić; Bakker, Musah, Samardžić; Scamacca, Sulemana, Vavassori. Alle.: Palladino.</p>
+<p>Tore: 7' Éderson (A), 29' Zappacosta (A), 52' Raspadori (A), 88' Pavlović (M), 94' Elfmeter. Nkunku</p>
+<p>Schiedsrichter: Zufferli aus Udine.</p>
+<p>Verwarnt: 38' Matić (S), 57' Garcia (S), 71' Ricci (M), 77' Loftus-Cheek (M), 89' Volpato (S), 94' Fadera (S).</p>
+
+</main>
+  <footer class="milan-footer">
+  <div class="footer-line">
+    <span>#SEMPREMILAN</span>
+
+    <img src="https://www.acmilan.com/images/logo.png" alt="AC Milan Logo">
+
+    <span>#ALWAYSMILAN
+</span>
+  </div>
+</footer>
+
+
+</body>
+</html>
